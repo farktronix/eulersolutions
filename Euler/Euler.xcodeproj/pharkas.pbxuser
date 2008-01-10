@@ -6,6 +6,7 @@
 		activeExecutable = 4335334F0D35FFC3001F23F8 /* Euler */;
 		activeTarget = 8DD76F960486AA7600D96B5E /* Euler */;
 		addToTargets = (
+			8DD76F960486AA7600D96B5E /* Euler */,
 		);
 		breakpoints = (
 		);
@@ -58,16 +59,12 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 221642691;
-			PBXWorkspaceStateSaveDate = 221642691;
+			PBXPerProjectTemplateStateSaveDate = 221687958;
+			PBXWorkspaceStateSaveDate = 221687958;
 		};
 		perUserProjectItems = {
-			433534BA0D36156A001F23F8 /* PBXBookmark */ = 433534BA0D36156A001F23F8 /* PBXBookmark */;
-			433534CE0D3615EA001F23F8 /* PBXBookmark */ = 433534CE0D3615EA001F23F8 /* PBXBookmark */;
-			433534DD0D361616001F23F8 /* PBXBookmark */ = 433534DD0D361616001F23F8 /* PBXBookmark */;
-			433536830D3630D4001F23F8 /* PBXTextBookmark */ = 433536830D3630D4001F23F8 /* PBXTextBookmark */;
-			433536840D3630D4001F23F8 /* PBXTextBookmark */ = 433536840D3630D4001F23F8 /* PBXTextBookmark */;
-			433536850D3630D4001F23F8 /* PBXTextBookmark */ = 433536850D3630D4001F23F8 /* PBXTextBookmark */;
+			4341D1DC0D36B26E00E58B07 /* PBXBookmark */ = 4341D1DC0D36B26E00E58B07 /* PBXBookmark */;
+			4341D2400D36B47000E58B07 /* PBXTextBookmark */ = 4341D2400D36B47000E58B07 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 433533550D35FFC4001F23F8 /* Source Control */;
 		userBuildSettings = {
@@ -130,17 +127,17 @@
 	};
 	433533870D360732001F23F8 /* PEProblem.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {856, 392}}";
-			sepNavSelRange = "{267, 0}";
-			sepNavVisRange = "{29, 472}";
+			sepNavIntBoundsRect = "{{0, 0}, {618, 428}}";
+			sepNavSelRange = "{470, 25}";
+			sepNavVisRange = "{0, 501}";
 			sepNavWindowFrame = "{{1173, 38}, {665, 541}}";
 		};
 	};
 	433533880D360732001F23F8 /* PEProblem.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {742, 966}}";
-			sepNavSelRange = "{1484, 0}";
-			sepNavVisRange = "{450, 885}";
+			sepNavIntBoundsRect = "{{0, 0}, {754, 994}}";
+			sepNavSelRange = "{1102, 0}";
+			sepNavVisRange = "{467, 926}";
 			sepNavWindowFrame = "{{30, 90}, {801, 548}}";
 		};
 	};
@@ -168,18 +165,6 @@
 			sepNavWindowFrame = "{{3, 11}, {801, 548}}";
 		};
 	};
-	433534BA0D36156A001F23F8 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 433533880D360732001F23F8 /* PEProblem.m */;
-	};
-	433534CE0D3615EA001F23F8 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 4335346A0D36133C001F23F8 /* Problem2.m */;
-	};
-	433534DD0D361616001F23F8 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* Euler.m */;
-	};
 	433534FB0D361803001F23F8 /* Util.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {742, 435}}";
@@ -206,49 +191,49 @@
 	};
 	433535C20D36230A001F23F8 /* Problem18.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {693, 1484}}";
-			sepNavSelRange = "{1901, 428}";
-			sepNavVisRange = "{886, 1507}";
-			sepNavWindowFrame = "{{199, 36}, {752, 969}}";
+			sepNavIntBoundsRect = "{{0, 0}, {705, 761}}";
+			sepNavSelRange = "{953, 0}";
+			sepNavVisRange = "{0, 963}";
+			sepNavWindowFrame = "{{87, 4}, {752, 874}}";
 		};
 	};
 	433535C40D36232F001F23F8 /* Problem18.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {849, 2142}}";
-			sepNavSelRange = "{181, 0}";
-			sepNavVisRange = "{72, 176}";
-			sepNavWindowFrame = "{{825, 153}, {993, 956}}";
+			sepNavIntBoundsRect = "{{0, 0}, {754, 760}}";
+			sepNavSelRange = "{268, 0}";
+			sepNavVisRange = "{0, 807}";
+			sepNavWindowFrame = "{{627, 5}, {801, 873}}";
 		};
 	};
-	433536830D3630D4001F23F8 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 433533880D360732001F23F8 /* PEProblem.m */;
-		name = "PEProblem.m: 65";
-		rLen = 0;
-		rLoc = 1484;
-		rType = 0;
-		vrLen = 885;
-		vrLoc = 450;
+	4341D1D80D36B22700E58B07 /* Problem67.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {754, 2380}}";
+			sepNavSelRange = "{306, 0}";
+			sepNavVisRange = "{0, 2558}";
+			sepNavWindowFrame = "{{139, 5}, {801, 873}}";
+		};
 	};
-	433536840D3630D4001F23F8 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 4335346A0D36133C001F23F8 /* Problem2.m */;
-		name = "Problem2.m: 41";
-		rLen = 0;
-		rLoc = 894;
-		rType = 0;
-		vrLen = 729;
-		vrLoc = 194;
+	4341D1D90D36B22700E58B07 /* Problem67.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {754, 760}}";
+			sepNavSelRange = "{982, 11}";
+			sepNavVisRange = "{0, 1261}";
+			sepNavWindowFrame = "{{278, 5}, {801, 873}}";
+		};
 	};
-	433536850D3630D4001F23F8 /* PBXTextBookmark */ = {
+	4341D1DC0D36B26E00E58B07 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 433533870D360732001F23F8 /* PEProblem.h */;
+	};
+	4341D2400D36B47000E58B07 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* Euler.m */;
-		name = "Euler.m: 52";
-		rLen = 0;
-		rLoc = 1540;
+		fRef = 433533870D360732001F23F8 /* PEProblem.h */;
+		name = "PEProblem.h: 27";
+		rLen = 25;
+		rLoc = 470;
 		rType = 0;
-		vrLen = 1557;
-		vrLoc = 28;
+		vrLen = 501;
+		vrLoc = 0;
 	};
 	8DD76F960486AA7600D96B5E /* Euler */ = {
 		activeExec = 0;

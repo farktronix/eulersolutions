@@ -14,6 +14,7 @@
 		433534FD0D361803001F23F8 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 433534FC0D361803001F23F8 /* Util.m */; };
 		433535750D361D47001F23F8 /* Problem19.m in Sources */ = {isa = PBXBuildFile; fileRef = 433535740D361D47001F23F8 /* Problem19.m */; };
 		433535C30D36230A001F23F8 /* Problem18.m in Sources */ = {isa = PBXBuildFile; fileRef = 433535C20D36230A001F23F8 /* Problem18.m */; };
+		4341D1DA0D36B22700E58B07 /* Problem67.m in Sources */ = {isa = PBXBuildFile; fileRef = 4341D1D90D36B22700E58B07 /* Problem67.m */; };
 		8DD76F9A0486AA7600D96B5E /* Euler.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* Euler.m */; settings = {ATTRIBUTES = (); }; };
 		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,8 @@
 		433535740D361D47001F23F8 /* Problem19.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem19.m; sourceTree = "<group>"; };
 		433535C20D36230A001F23F8 /* Problem18.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem18.m; sourceTree = "<group>"; };
 		433535C40D36232F001F23F8 /* Problem18.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Problem18.h; sourceTree = "<group>"; };
+		4341D1D80D36B22700E58B07 /* Problem67.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Problem67.h; sourceTree = "<group>"; };
+		4341D1D90D36B22700E58B07 /* Problem67.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem67.m; sourceTree = "<group>"; };
 		8DD76FA10486AA7600D96B5E /* Euler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Euler; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,16 +77,18 @@
 			children = (
 				32A70AAB03705E1F00C91783 /* Euler_Prefix.pch */,
 				08FB7796FE84155DC02AAC07 /* Euler.m */,
+				433534FB0D361803001F23F8 /* Util.h */,
+				433534FC0D361803001F23F8 /* Util.m */,
 				433533870D360732001F23F8 /* PEProblem.h */,
 				433533880D360732001F23F8 /* PEProblem.m */,
 				4335338D0D3607A4001F23F8 /* Problem1.m */,
 				4335346A0D36133C001F23F8 /* Problem2.m */,
 				433534B60D36153B001F23F8 /* Problem3.m */,
-				433534FB0D361803001F23F8 /* Util.h */,
-				433534FC0D361803001F23F8 /* Util.m */,
 				433535C40D36232F001F23F8 /* Problem18.h */,
 				433535C20D36230A001F23F8 /* Problem18.m */,
 				433535740D361D47001F23F8 /* Problem19.m */,
+				4341D1D80D36B22700E58B07 /* Problem67.h */,
+				4341D1D90D36B22700E58B07 /* Problem67.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 				433534FD0D361803001F23F8 /* Util.m in Sources */,
 				433535750D361D47001F23F8 /* Problem19.m in Sources */,
 				433535C30D36230A001F23F8 /* Problem18.m in Sources */,
+				4341D1DA0D36B22700E58B07 /* Problem67.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -38,11 +38,11 @@
     NSString *solution = [self runSolution];
     uint64_t endtime = mach_absolute_time();
     uint64_t duration = endtime - starttime;
-    printf("Done", _showResult);
+    printf("%s", [solution isEqualToString:[self realAnswer]] ? "Correct" : "Wrong");
     
-    if (self.showResult) printf(":\t%s", [solution UTF8String]);
+    if (self.showResult) printf(": %30s", [solution UTF8String]);
     if (self.showTiming) {
-        printf("\t\t(%0.4fms)", (duration * sTimebaseInfo.numer / sTimebaseInfo.denom) / 1000000.0);
+        printf("\t(%0.4fms)", (duration * sTimebaseInfo.numer / sTimebaseInfo.denom) / 1000000.0);
     }
     
     printf("\n");
