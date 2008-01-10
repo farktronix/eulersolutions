@@ -20,7 +20,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 @end
 
 @implementation Problem1
-- (NSString *) _runSolution
+- (NSString *) runSolution
 {
     int i;
     int sum = 0;
@@ -30,5 +30,5 @@ Find the sum of all the multiples of 3 or 5 below 1000.
     return [NSString stringWithFormat:@"%d", sum];
 }
 
-- (NSString *) _realAnswer { return @"233168"; }
+- (NSString *) realAnswer { return @"233168"; }
 @end

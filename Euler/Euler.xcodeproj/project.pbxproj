@@ -12,6 +12,8 @@
 		4335346B0D36133C001F23F8 /* Problem2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4335346A0D36133C001F23F8 /* Problem2.m */; };
 		433534B70D36153B001F23F8 /* Problem3.m in Sources */ = {isa = PBXBuildFile; fileRef = 433534B60D36153B001F23F8 /* Problem3.m */; };
 		433534FD0D361803001F23F8 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 433534FC0D361803001F23F8 /* Util.m */; };
+		433535750D361D47001F23F8 /* Problem19.m in Sources */ = {isa = PBXBuildFile; fileRef = 433535740D361D47001F23F8 /* Problem19.m */; };
+		433535C30D36230A001F23F8 /* Problem18.m in Sources */ = {isa = PBXBuildFile; fileRef = 433535C20D36230A001F23F8 /* Problem18.m */; };
 		8DD76F9A0486AA7600D96B5E /* Euler.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* Euler.m */; settings = {ATTRIBUTES = (); }; };
 		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -39,6 +41,9 @@
 		433534B60D36153B001F23F8 /* Problem3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem3.m; sourceTree = "<group>"; };
 		433534FB0D361803001F23F8 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		433534FC0D361803001F23F8 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		433535740D361D47001F23F8 /* Problem19.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem19.m; sourceTree = "<group>"; };
+		433535C20D36230A001F23F8 /* Problem18.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem18.m; sourceTree = "<group>"; };
+		433535C40D36232F001F23F8 /* Problem18.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Problem18.h; sourceTree = "<group>"; };
 		8DD76FA10486AA7600D96B5E /* Euler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Euler; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -76,6 +81,9 @@
 				433534B60D36153B001F23F8 /* Problem3.m */,
 				433534FB0D361803001F23F8 /* Util.h */,
 				433534FC0D361803001F23F8 /* Util.m */,
+				433535C40D36232F001F23F8 /* Problem18.h */,
+				433535C20D36230A001F23F8 /* Problem18.m */,
+				433535740D361D47001F23F8 /* Problem19.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -145,6 +153,8 @@
 				4335346B0D36133C001F23F8 /* Problem2.m in Sources */,
 				433534B70D36153B001F23F8 /* Problem3.m in Sources */,
 				433534FD0D361803001F23F8 /* Util.m in Sources */,
+				433535750D361D47001F23F8 /* Problem19.m in Sources */,
+				433535C30D36230A001F23F8 /* Problem18.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +172,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Euler_Prefix.pch;
 				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = "-lssl";
 				PRODUCT_NAME = Euler;
 				ZERO_LINK = YES;
 			};
@@ -175,6 +186,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Euler_Prefix.pch;
 				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = "-lssl";
 				PRODUCT_NAME = Euler;
 			};
 			name = Release;

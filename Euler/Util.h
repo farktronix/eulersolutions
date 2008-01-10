@@ -7,5 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
+#include <openssl/bn.h>
 
 BOOL isPrime (uint64 n);

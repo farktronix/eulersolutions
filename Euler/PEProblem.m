@@ -35,7 +35,7 @@
     
     printf("Solving Problem #%03d ... ", [self _problemNumber]);
     uint64_t starttime = mach_absolute_time();
-    NSString *solution = [self _runSolution];
+    NSString *solution = [self runSolution];
     uint64_t endtime = mach_absolute_time();
     uint64_t duration = endtime - starttime;
     printf("Done", _showResult);
@@ -59,13 +59,13 @@
     return num;
 }
 
-- (NSString *) _runSolution
+- (NSString *) runSolution
 {
-    NSAssert(0, @"_runSolution called on the superclass. This shouldn't happen");
+    NSAssert(0, @"runSolution called on the superclass. This shouldn't happen");
     return @"";
 }
 
-- (NSString *) _realAnswer
+- (NSString *) realAnswer
 {
     return @"";
 }

@@ -21,7 +21,7 @@ What is the largest prime factor of the number 317584931803?
 @end
 
 @implementation Problem3
-- (NSString *) _runSolution
+- (NSString *) runSolution
 {
     uint64 largest = 0;
     uint64 i;
@@ -34,5 +34,5 @@ What is the largest prime factor of the number 317584931803?
     }
     return [NSString stringWithFormat:@"%u", largest];
 }
-- (NSString *) _realAnswer { return @"3919"; }
+- (NSString *) realAnswer { return @"3919"; }
 @end

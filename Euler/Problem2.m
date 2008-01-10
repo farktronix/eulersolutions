@@ -22,7 +22,7 @@ Find the sum of all the even-valued terms in the sequence which do not exceed on
 @end
 
 @implementation Problem2
-- (NSString *) _runSolution
+- (NSString *) runSolution
 {
     int last = 1;
     int cur = 1;
@@ -38,5 +38,5 @@ Find the sum of all the even-valued terms in the sequence which do not exceed on
     return [NSString stringWithFormat:@"%d", sum];
 }
 
-- (NSString *) _realAnswer { return @"1089154"; }
+- (NSString *) realAnswer { return @"1089154"; }
 @end

@@ -23,6 +23,6 @@
 
 @interface PEProblem (InternalGoo)
 - (int) _problemNumber;
-- (NSString *) _runSolution;
-- (NSString *) _realAnswer;
+- (NSString *) runSolution;
+- (NSString *) realAnswer;
 @end
