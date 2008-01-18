@@ -15,6 +15,7 @@
 @synthesize showResult = _showResult;
 @synthesize showTiming = _showTiming;
 @synthesize verbose = _verbose;
+@synthesize solveTime = _solveTime;
 
 - (id) init
 {
@@ -22,6 +23,7 @@
         _verbose = NO;
         _showResult = YES;
         _showTiming = NO;
+        _solveTime = 0;
     }
     return self;
 }
@@ -37,12 +39,12 @@
     uint64_t starttime = mach_absolute_time();
     NSString *solution = [self runSolution];
     uint64_t endtime = mach_absolute_time();
-    uint64_t duration = endtime - starttime;
+    _solveTime = endtime - starttime;
     printf("%s", [solution isEqualToString:[self realAnswer]] ? "Correct" : "Wrong");
     
     if (self.showResult) printf(": %30s", [solution UTF8String]);
     if (self.showTiming) {
-        printf("\t(%0.4fms)", (duration * sTimebaseInfo.numer / sTimebaseInfo.denom) / 1000000.0);
+        printf("\t(%0.4fms)", (_solveTime * sTimebaseInfo.numer / sTimebaseInfo.denom) / 1000000.0);
     }
     
     printf("\n");
@@ -69,4 +71,5 @@
 {
     return @"";
 }
+
 @end

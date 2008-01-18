@@ -12,12 +12,14 @@
     BOOL _showResult;
     BOOL _showTiming;
     BOOL _verbose;
+    uint64_t _solveTime;
 }
 - (NSString *) solveProblem;
 
 @property BOOL showResult;
 @property BOOL showTiming;
 @property BOOL verbose;
+@property uint64_t solveTime;
 
 @end
 

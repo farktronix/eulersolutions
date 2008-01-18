@@ -59,12 +59,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 221687958;
-			PBXWorkspaceStateSaveDate = 221687958;
-		};
-		perUserProjectItems = {
-			4341D1DC0D36B26E00E58B07 /* PBXBookmark */ = 4341D1DC0D36B26E00E58B07 /* PBXBookmark */;
-			4341D2400D36B47000E58B07 /* PBXTextBookmark */ = 4341D2400D36B47000E58B07 /* PBXTextBookmark */;
+			PBXPerProjectTemplateStateSaveDate = 222388161;
+			PBXWorkspaceStateSaveDate = 222388161;
 		};
 		sourceControlManager = 433533550D35FFC4001F23F8 /* Source Control */;
 		userBuildSettings = {
@@ -72,10 +68,10 @@
 	};
 	08FB7796FE84155DC02AAC07 /* Euler.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {740, 1526}}";
-			sepNavSelRange = "{1540, 0}";
-			sepNavVisRange = "{28, 1557}";
-			sepNavWindowFrame = "{{706, 361}, {799, 817}}";
+			sepNavIntBoundsRect = "{{0, 0}, {771, 1792}}";
+			sepNavSelRange = "{2852, 0}";
+			sepNavVisRange = "{1761, 1966}";
+			sepNavWindowFrame = "{{913, 47}, {830, 1069}}";
 		};
 	};
 	32A70AAB03705E1F00C91783 /* Euler_Prefix.pch */ = {
@@ -127,41 +123,41 @@
 	};
 	433533870D360732001F23F8 /* PEProblem.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {618, 428}}";
-			sepNavSelRange = "{470, 25}";
-			sepNavVisRange = "{0, 501}";
-			sepNavWindowFrame = "{{1173, 38}, {665, 541}}";
+			sepNavIntBoundsRect = "{{0, 0}, {606, 428}}";
+			sepNavSelRange = "{349, 0}";
+			sepNavVisRange = "{0, 556}";
+			sepNavWindowFrame = "{{463, 367}, {665, 541}}";
 		};
 	};
 	433533880D360732001F23F8 /* PEProblem.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {754, 994}}";
-			sepNavSelRange = "{1102, 0}";
-			sepNavVisRange = "{467, 926}";
-			sepNavWindowFrame = "{{30, 90}, {801, 548}}";
+			sepNavIntBoundsRect = "{{0, 0}, {855, 1064}}";
+			sepNavSelRange = "{1334, 0}";
+			sepNavVisRange = "{822, 826}";
+			sepNavWindowFrame = "{{30, 8}, {914, 630}}";
 		};
 	};
 	4335338D0D3607A4001F23F8 /* Problem1.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {856, 490}}";
-			sepNavSelRange = "{674, 0}";
-			sepNavVisRange = "{167, 535}";
+			sepNavIntBoundsRect = "{{0, 0}, {606, 504}}";
+			sepNavSelRange = "{480, 165}";
+			sepNavVisRange = "{70, 632}";
 			sepNavWindowFrame = "{{59, 607}, {665, 541}}";
 		};
 	};
 	4335346A0D36133C001F23F8 /* Problem2.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {742, 616}}";
-			sepNavSelRange = "{894, 0}";
-			sepNavVisRange = "{194, 729}";
-			sepNavWindowFrame = "{{503, 54}, {801, 548}}";
+			sepNavIntBoundsRect = "{{0, 0}, {828, 681}}";
+			sepNavSelRange = "{868, 49}";
+			sepNavVisRange = "{0, 923}";
+			sepNavWindowFrame = "{{337, 315}, {887, 794}}";
 		};
 	};
 	433534B60D36153B001F23F8 /* Problem3.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {742, 574}}";
-			sepNavSelRange = "{745, 46}";
-			sepNavVisRange = "{168, 624}";
+			sepNavSelRange = "{418, 0}";
+			sepNavVisRange = "{168, 622}";
 			sepNavWindowFrame = "{{3, 11}, {801, 548}}";
 		};
 	};
@@ -176,9 +172,9 @@
 	433534FC0D361803001F23F8 /* Util.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {742, 435}}";
-			sepNavSelRange = "{286, 0}";
-			sepNavVisRange = "{0, 345}";
-			sepNavWindowFrame = "{{164, 509}, {801, 548}}";
+			sepNavSelRange = "{292, 0}";
+			sepNavVisRange = "{0, 378}";
+			sepNavWindowFrame = "{{47, 571}, {801, 548}}";
 		};
 	};
 	433535740D361D47001F23F8 /* Problem19.m */ = {
@@ -191,8 +187,8 @@
 	};
 	433535C20D36230A001F23F8 /* Problem18.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {705, 761}}";
-			sepNavSelRange = "{953, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {693, 761}}";
+			sepNavSelRange = "{135, 78}";
 			sepNavVisRange = "{0, 963}";
 			sepNavWindowFrame = "{{87, 4}, {752, 874}}";
 		};
@@ -221,19 +217,21 @@
 			sepNavWindowFrame = "{{278, 5}, {801, 873}}";
 		};
 	};
-	4341D1DC0D36B26E00E58B07 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 433533870D360732001F23F8 /* PEProblem.h */;
+	43E978D50D416001000DAEE5 /* Problem28.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {954, 714}}";
+			sepNavSelRange = "{532, 0}";
+			sepNavVisRange = "{19, 999}";
+			sepNavWindowFrame = "{{196, 224}, {1013, 791}}";
+		};
 	};
-	4341D2400D36B47000E58B07 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 433533870D360732001F23F8 /* PEProblem.h */;
-		name = "PEProblem.h: 27";
-		rLen = 25;
-		rLoc = 470;
-		rType = 0;
-		vrLen = 501;
-		vrLoc = 0;
+	43E979070D416341000DAEE5 /* Problem35.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {701, 1498}}";
+			sepNavSelRange = "{2250, 0}";
+			sepNavVisRange = "{788, 242}";
+			sepNavWindowFrame = "{{57, 62}, {731, 749}}";
+		};
 	};
 	8DD76F960486AA7600D96B5E /* Euler */ = {
 		activeExec = 0;

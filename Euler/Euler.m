@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
 #import <getopt.h>
+#import <mach/mach_time.h>
 
 #import "PEProblem.h"
 
@@ -69,6 +70,9 @@ int main (int argc, char * argv[]) {
     BOOL verbose = NO;
     int pnum = -1;
 
+    static mach_timebase_info_data_t sTimebaseInfo;
+    mach_timebase_info(&sTimebaseInfo);
+    
     opterr = 0; // suppress getopt output
     int ch;
     while ((ch = getopt_long(argc, argv, "p:rtv", longopts, NULL)) != -1) {
@@ -95,13 +99,28 @@ int main (int argc, char * argv[]) {
     
     NSArray *problemClasses = getProblemClasses();
     
+    uint64 totalTime = 0;
+    int attemptedProblems = 0;
+    int correctProblems = 0;
     for (PEProblem *problem in problemClasses) {
         if (pnum != -1 && [problem _problemNumber] != pnum) continue;
         problem.showResult = showResult;
         problem.showTiming = showTiming;
         problem.verbose = verbose;
-        [problem solveProblem];
+        NSString *solution = [problem solveProblem];
+        attemptedProblems++;
+        totalTime += problem.solveTime;
+        if ([solution isEqualToString:problem.realAnswer]) {
+            correctProblems++;
+        }
     }
+    
+    printf("\n==========\n");
+    printf("Solved %d out of %d problems\n", correctProblems, attemptedProblems);
+    if (showTiming) {
+        printf("Total Time: %0.4fms\n", (totalTime * sTimebaseInfo.numer / sTimebaseInfo.denom) / 1000000.0);
+    }
+    printf("==========\n");
     
     [pool drain];
     return 0;
