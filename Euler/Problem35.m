@@ -49,16 +49,16 @@ static BOOL isCircular (uint64 num)
                isPrime(digit3 * 1000 + digit4 * 100 + digit1 * 10 + digit2) && 
                isPrime(digit4 * 1000 + digit1 * 100 + digit2 * 10 + digit3);
     } else if (num < 100000) {
-        uint64 digit1 = num / 10000;
-        uint64 thousands = num % 10000;
-        uint64 digit2 = (thousands / 1000);
-        uint64 hundreds = thousands % 1000;
-        uint64 digit2 = hundreds / 100;
-        uint64 digit3 = (hundreds % 100) / 10;
-        uint64 digit4 = num % 10;
-        return isPrime(digit2 * 1000 + digit3 * 100 + digit4 * 10 + digit1) && 
-               isPrime(digit3 * 1000 + digit4 * 100 + digit1 * 10 + digit2) && 
-               isPrime(digit4 * 1000 + digit1 * 100 + digit2 * 10 + digit3);
+//        uint64 digit1 = num / 10000;
+//        uint64 thousands = num % 10000;
+//        uint64 digit2 = (thousands / 1000);
+//        uint64 hundreds = thousands % 1000;
+//        uint64 digit2 = hundreds / 100;
+//        uint64 digit3 = (hundreds % 100) / 10;
+//        uint64 digit4 = num % 10;
+//        return isPrime(digit2 * 1000 + digit3 * 100 + digit4 * 10 + digit1) && 
+//               isPrime(digit3 * 1000 + digit4 * 100 + digit1 * 10 + digit2) && 
+//               isPrime(digit4 * 1000 + digit1 * 100 + digit2 * 10 + digit3);
     }
     return NO;
 }

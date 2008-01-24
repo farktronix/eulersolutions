@@ -17,6 +17,8 @@
 		4341D1DA0D36B22700E58B07 /* Problem67.m in Sources */ = {isa = PBXBuildFile; fileRef = 4341D1D90D36B22700E58B07 /* Problem67.m */; };
 		43E978D60D416001000DAEE5 /* Problem28.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E978D50D416001000DAEE5 /* Problem28.m */; };
 		43E979080D416341000DAEE5 /* Problem35.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E979070D416341000DAEE5 /* Problem35.m */; };
+		43F70DDC0D47FDA20073426E /* Problem82.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F70DDB0D47FDA20073426E /* Problem82.m */; };
+		43F70E7B0D480A310073426E /* Problem81.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F70E7A0D480A310073426E /* Problem81.m */; };
 		8DD76F9A0486AA7600D96B5E /* Euler.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* Euler.m */; settings = {ATTRIBUTES = (); }; };
 		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,9 @@
 		4341D1D90D36B22700E58B07 /* Problem67.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem67.m; sourceTree = "<group>"; };
 		43E978D50D416001000DAEE5 /* Problem28.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem28.m; sourceTree = "<group>"; };
 		43E979070D416341000DAEE5 /* Problem35.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem35.m; sourceTree = "<group>"; };
+		43F70DDB0D47FDA20073426E /* Problem82.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem82.m; sourceTree = "<group>"; };
+		43F70DEC0D47FFCC0073426E /* Problem82.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Problem82.h; sourceTree = "<group>"; };
+		43F70E7A0D480A310073426E /* Problem81.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem81.m; sourceTree = "<group>"; };
 		8DD76FA10486AA7600D96B5E /* Euler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Euler; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,6 +100,9 @@
 				4341D1D90D36B22700E58B07 /* Problem67.m */,
 				43E978D50D416001000DAEE5 /* Problem28.m */,
 				43E979070D416341000DAEE5 /* Problem35.m */,
+				43F70E7A0D480A310073426E /* Problem81.m */,
+				43F70DEC0D47FFCC0073426E /* Problem82.h */,
+				43F70DDB0D47FDA20073426E /* Problem82.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -169,6 +177,8 @@
 				4341D1DA0D36B22700E58B07 /* Problem67.m in Sources */,
 				43E978D60D416001000DAEE5 /* Problem28.m in Sources */,
 				43E979080D416341000DAEE5 /* Problem35.m in Sources */,
+				43F70DDC0D47FDA20073426E /* Problem82.m in Sources */,
+				43F70E7B0D480A310073426E /* Problem81.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -59,8 +59,12 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 222388161;
-			PBXWorkspaceStateSaveDate = 222388161;
+			PBXPerProjectTemplateStateSaveDate = 222821777;
+			PBXWorkspaceStateSaveDate = 222821777;
+		};
+		perUserProjectItems = {
+			43F70DFF0D4802310073426E /* PBXTextBookmark */ = 43F70DFF0D4802310073426E /* PBXTextBookmark */;
+			43F70E990D481AFD0073426E /* PBXTextBookmark */ = 43F70E990D481AFD0073426E /* PBXTextBookmark */;
 		};
 		sourceControlManager = 433533550D35FFC4001F23F8 /* Source Control */;
 		userBuildSettings = {
@@ -203,9 +207,9 @@
 	};
 	4341D1D80D36B22700E58B07 /* Problem67.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {754, 2380}}";
+			sepNavIntBoundsRect = "{{0, 0}, {742, 2380}}";
 			sepNavSelRange = "{306, 0}";
-			sepNavVisRange = "{0, 2558}";
+			sepNavVisRange = "{177, 3223}";
 			sepNavWindowFrame = "{{139, 5}, {801, 873}}";
 		};
 	};
@@ -220,18 +224,78 @@
 	43E978D50D416001000DAEE5 /* Problem28.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {954, 714}}";
-			sepNavSelRange = "{532, 0}";
+			sepNavSelRange = "{961, 51}";
 			sepNavVisRange = "{19, 999}";
 			sepNavWindowFrame = "{{196, 224}, {1013, 791}}";
 		};
 	};
 	43E979070D416341000DAEE5 /* Problem35.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {701, 1498}}";
-			sepNavSelRange = "{2250, 0}";
-			sepNavVisRange = "{788, 242}";
+			sepNavIntBoundsRect = "{{0, 0}, {701, 1050}}";
+			sepNavSelRange = "{2063, 0}";
+			sepNavVisRange = "{1602, 219}";
 			sepNavWindowFrame = "{{57, 62}, {731, 749}}";
 		};
+	};
+	43F70DDB0D47FDA20073426E /* Problem82.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {795, 1134}}";
+			sepNavSelRange = "{1081, 0}";
+			sepNavVisRange = "{439, 1198}";
+			sepNavWindowFrame = "{{724, 326}, {854, 749}}";
+		};
+	};
+	43F70DEC0D47FFCC0073426E /* Problem82.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {701, 2156}}";
+			sepNavSelRange = "{370, 0}";
+			sepNavVisRange = "{657, 502}";
+			sepNavWindowFrame = "{{53, 42}, {906, 696}}";
+		};
+	};
+	43F70DFF0D4802310073426E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 43F70E000D4802310073426E /* NSObjCRuntime.h */;
+		rLen = 1;
+		rLoc = 155;
+		rType = 1;
+	};
+	43F70E000D4802310073426E /* NSObjCRuntime.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSObjCRuntime.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSObjCRuntime.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {847, 2436}}";
+			sepNavSelRange = "{4971, 100}";
+			sepNavVisRange = "{4641, 778}";
+			sepNavWindowFrame = "{{93, 198}, {906, 696}}";
+		};
+	};
+	43F70E7A0D480A310073426E /* Problem81.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {847, 896}}";
+			sepNavSelRange = "{1250, 0}";
+			sepNavVisRange = "{386, 1040}";
+			sepNavWindowFrame = "{{314, 204}, {906, 696}}";
+		};
+	};
+	43F70E990D481AFD0073426E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 43F70E9A0D481AFD0073426E /* NSObjCRuntime.h */;
+		name = "NSObjCRuntime.h: 156";
+		rLen = 100;
+		rLoc = 4971;
+		rType = 0;
+		vrLen = 778;
+		vrLoc = 4641;
+	};
+	43F70E9A0D481AFD0073426E /* NSObjCRuntime.h */ = {
+		isa = PBXFileReference;
+		name = NSObjCRuntime.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSObjCRuntime.h;
+		sourceTree = "<absolute>";
 	};
 	8DD76F960486AA7600D96B5E /* Euler */ = {
 		activeExec = 0;
