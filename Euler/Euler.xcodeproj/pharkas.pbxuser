@@ -1,7 +1,6 @@
 // !$*UTF8*$!
 {
 	08FB7793FE84155DC02AAC07 /* Project object */ = {
-		activeArchitecture = i386;
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 4335334F0D35FFC3001F23F8 /* Euler */;
 		activeTarget = 8DD76F960486AA7600D96B5E /* Euler */;
@@ -15,6 +14,20 @@
 			4335334F0D35FFC3001F23F8 /* Euler */,
 		);
 		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					131,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
@@ -45,7 +58,7 @@
 					203,
 					60,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 				);
@@ -59,12 +72,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 222821777;
-			PBXWorkspaceStateSaveDate = 222821777;
-		};
-		perUserProjectItems = {
-			43F70DFF0D4802310073426E /* PBXTextBookmark */ = 43F70DFF0D4802310073426E /* PBXTextBookmark */;
-			43F70E990D481AFD0073426E /* PBXTextBookmark */ = 43F70E990D481AFD0073426E /* PBXTextBookmark */;
+			PBXPerProjectTemplateStateSaveDate = 244085275;
+			PBXWorkspaceStateSaveDate = 244085275;
 		};
 		sourceControlManager = 433533550D35FFC4001F23F8 /* Source Control */;
 		userBuildSettings = {
@@ -74,7 +83,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {771, 1792}}";
 			sepNavSelRange = "{2852, 0}";
-			sepNavVisRange = "{1761, 1966}";
+			sepNavVisRange = "{1611, 2082}";
 			sepNavWindowFrame = "{{913, 47}, {830, 1069}}";
 		};
 	};
@@ -89,8 +98,12 @@
 	4335334F0D35FFC3001F23F8 /* Euler */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
+			YES,
+			YES,
 		);
 		argumentStrings = (
+			"--problem",
+			23,
 		);
 		autoAttachOnCrash = 1;
 		breakpointsEnabled = 0;
@@ -176,16 +189,16 @@
 	433534FC0D361803001F23F8 /* Util.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {742, 435}}";
-			sepNavSelRange = "{292, 0}";
+			sepNavSelRange = "{221, 0}";
 			sepNavVisRange = "{0, 378}";
-			sepNavWindowFrame = "{{47, 571}, {801, 548}}";
+			sepNavWindowFrame = "{{57, 105}, {801, 548}}";
 		};
 	};
 	433535740D361D47001F23F8 /* Problem19.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {934, 1316}}";
-			sepNavSelRange = "{1192, 0}";
-			sepNavVisRange = "{850, 1344}";
+			sepNavSelRange = "{2142, 44}";
+			sepNavVisRange = "{850, 1342}";
 			sepNavWindowFrame = "{{93, 96}, {993, 956}}";
 		};
 	};
@@ -221,28 +234,36 @@
 			sepNavWindowFrame = "{{278, 5}, {801, 873}}";
 		};
 	};
+	4390DDAC0E8C77D3001E58D2 /* Problem23.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {935, 644}}";
+			sepNavSelRange = "{668, 0}";
+			sepNavVisRange = "{128, 643}";
+			sepNavWindowFrame = "{{904, 472}, {994, 662}}";
+		};
+	};
 	43E978D50D416001000DAEE5 /* Problem28.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {954, 714}}";
 			sepNavSelRange = "{961, 51}";
-			sepNavVisRange = "{19, 999}";
+			sepNavVisRange = "{3, 1015}";
 			sepNavWindowFrame = "{{196, 224}, {1013, 791}}";
 		};
 	};
 	43E979070D416341000DAEE5 /* Problem35.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {701, 1050}}";
-			sepNavSelRange = "{2063, 0}";
-			sepNavVisRange = "{1602, 219}";
-			sepNavWindowFrame = "{{57, 62}, {731, 749}}";
+			sepNavIntBoundsRect = "{{0, 0}, {935, 784}}";
+			sepNavSelRange = "{1246, 0}";
+			sepNavVisRange = "{429, 826}";
+			sepNavWindowFrame = "{{817, 183}, {994, 662}}";
 		};
 	};
 	43F70DDB0D47FDA20073426E /* Problem82.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {795, 1134}}";
 			sepNavSelRange = "{1081, 0}";
-			sepNavVisRange = "{439, 1198}";
-			sepNavWindowFrame = "{{724, 326}, {854, 749}}";
+			sepNavVisRange = "{868, 1176}";
+			sepNavWindowFrame = "{{67, 382}, {854, 749}}";
 		};
 	};
 	43F70DEC0D47FFCC0073426E /* Problem82.h */ = {
@@ -253,26 +274,6 @@
 			sepNavWindowFrame = "{{53, 42}, {906, 696}}";
 		};
 	};
-	43F70DFF0D4802310073426E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 43F70E000D4802310073426E /* NSObjCRuntime.h */;
-		rLen = 1;
-		rLoc = 155;
-		rType = 1;
-	};
-	43F70E000D4802310073426E /* NSObjCRuntime.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = NSObjCRuntime.h;
-		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSObjCRuntime.h;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {847, 2436}}";
-			sepNavSelRange = "{4971, 100}";
-			sepNavVisRange = "{4641, 778}";
-			sepNavWindowFrame = "{{93, 198}, {906, 696}}";
-		};
-	};
 	43F70E7A0D480A310073426E /* Problem81.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {847, 896}}";
@@ -280,22 +281,6 @@
 			sepNavVisRange = "{386, 1040}";
 			sepNavWindowFrame = "{{314, 204}, {906, 696}}";
 		};
-	};
-	43F70E990D481AFD0073426E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 43F70E9A0D481AFD0073426E /* NSObjCRuntime.h */;
-		name = "NSObjCRuntime.h: 156";
-		rLen = 100;
-		rLoc = 4971;
-		rType = 0;
-		vrLen = 778;
-		vrLoc = 4641;
-	};
-	43F70E9A0D481AFD0073426E /* NSObjCRuntime.h */ = {
-		isa = PBXFileReference;
-		name = NSObjCRuntime.h;
-		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSObjCRuntime.h;
-		sourceTree = "<absolute>";
 	};
 	8DD76F960486AA7600D96B5E /* Euler */ = {
 		activeExec = 0;

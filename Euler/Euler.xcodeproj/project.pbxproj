@@ -15,6 +15,7 @@
 		433535750D361D47001F23F8 /* Problem19.m in Sources */ = {isa = PBXBuildFile; fileRef = 433535740D361D47001F23F8 /* Problem19.m */; };
 		433535C30D36230A001F23F8 /* Problem18.m in Sources */ = {isa = PBXBuildFile; fileRef = 433535C20D36230A001F23F8 /* Problem18.m */; };
 		4341D1DA0D36B22700E58B07 /* Problem67.m in Sources */ = {isa = PBXBuildFile; fileRef = 4341D1D90D36B22700E58B07 /* Problem67.m */; };
+		4390DDAD0E8C77D3001E58D2 /* Problem23.m in Sources */ = {isa = PBXBuildFile; fileRef = 4390DDAC0E8C77D3001E58D2 /* Problem23.m */; };
 		43E978D60D416001000DAEE5 /* Problem28.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E978D50D416001000DAEE5 /* Problem28.m */; };
 		43E979080D416341000DAEE5 /* Problem35.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E979070D416341000DAEE5 /* Problem35.m */; };
 		43F70DDC0D47FDA20073426E /* Problem82.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F70DDB0D47FDA20073426E /* Problem82.m */; };
@@ -51,6 +52,7 @@
 		433535C40D36232F001F23F8 /* Problem18.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Problem18.h; sourceTree = "<group>"; };
 		4341D1D80D36B22700E58B07 /* Problem67.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Problem67.h; sourceTree = "<group>"; };
 		4341D1D90D36B22700E58B07 /* Problem67.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem67.m; sourceTree = "<group>"; };
+		4390DDAC0E8C77D3001E58D2 /* Problem23.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem23.m; sourceTree = "<group>"; };
 		43E978D50D416001000DAEE5 /* Problem28.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem28.m; sourceTree = "<group>"; };
 		43E979070D416341000DAEE5 /* Problem35.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem35.m; sourceTree = "<group>"; };
 		43F70DDB0D47FDA20073426E /* Problem82.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem82.m; sourceTree = "<group>"; };
@@ -96,10 +98,11 @@
 				433535C40D36232F001F23F8 /* Problem18.h */,
 				433535C20D36230A001F23F8 /* Problem18.m */,
 				433535740D361D47001F23F8 /* Problem19.m */,
-				4341D1D80D36B22700E58B07 /* Problem67.h */,
-				4341D1D90D36B22700E58B07 /* Problem67.m */,
+				4390DDAC0E8C77D3001E58D2 /* Problem23.m */,
 				43E978D50D416001000DAEE5 /* Problem28.m */,
 				43E979070D416341000DAEE5 /* Problem35.m */,
+				4341D1D80D36B22700E58B07 /* Problem67.h */,
+				4341D1D90D36B22700E58B07 /* Problem67.m */,
 				43F70E7A0D480A310073426E /* Problem81.m */,
 				43F70DEC0D47FFCC0073426E /* Problem82.h */,
 				43F70DDB0D47FDA20073426E /* Problem82.m */,
@@ -179,6 +182,7 @@
 				43E979080D416341000DAEE5 /* Problem35.m in Sources */,
 				43F70DDC0D47FDA20073426E /* Problem82.m in Sources */,
 				43F70E7B0D480A310073426E /* Problem81.m in Sources */,
+				4390DDAD0E8C77D3001E58D2 /* Problem23.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

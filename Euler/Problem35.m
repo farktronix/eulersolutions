@@ -24,43 +24,16 @@ How many circular primes are there below one million?
 
 static BOOL isCircular (uint64 num)
 {
-    if (num < 10) {
-        return YES;
+    int exp = (int)log10(num);
+    uint64 curNum = num;
+    int ii = 0;
+    for (ii = 0; ii < exp; ii++) {
+        int lastDigit = curNum % 10;
+        curNum /= 10;
+        curNum += lastDigit * pow(10, exp);
+        if (!isPrime(curNum)) return NO;
     }
-    else if (num < 100) {
-        uint64 digit1 = num / 10;
-        uint64 digit2 = num % 10;
-        return isPrime(digit2 * 10 + digit1);
-    }
-    else if (num < 1000) {
-        uint64 digit1 = num / 100;
-        uint64 digit2 = (num % 100) / 10;
-        uint64 digit3 = num % 10;
-        return isPrime(digit2 * 100 + digit3 * 10 + digit1) && 
-               isPrime(digit3 * 100 + digit1 * 10 + digit2);
-    }
-    else if (num < 10000) {
-        uint64 digit1 = num / 1000;
-        uint64 hundreds = num % 1000;
-        uint64 digit2 = hundreds / 100;
-        uint64 digit3 = (hundreds % 100) / 10;
-        uint64 digit4 = num % 10;
-        return isPrime(digit2 * 1000 + digit3 * 100 + digit4 * 10 + digit1) && 
-               isPrime(digit3 * 1000 + digit4 * 100 + digit1 * 10 + digit2) && 
-               isPrime(digit4 * 1000 + digit1 * 100 + digit2 * 10 + digit3);
-    } else if (num < 100000) {
-//        uint64 digit1 = num / 10000;
-//        uint64 thousands = num % 10000;
-//        uint64 digit2 = (thousands / 1000);
-//        uint64 hundreds = thousands % 1000;
-//        uint64 digit2 = hundreds / 100;
-//        uint64 digit3 = (hundreds % 100) / 10;
-//        uint64 digit4 = num % 10;
-//        return isPrime(digit2 * 1000 + digit3 * 100 + digit4 * 10 + digit1) && 
-//               isPrime(digit3 * 1000 + digit4 * 100 + digit1 * 10 + digit2) && 
-//               isPrime(digit4 * 1000 + digit1 * 100 + digit2 * 10 + digit3);
-    }
-    return NO;
+    return YES;
 }
 
 @implementation Problem35
@@ -68,14 +41,15 @@ static BOOL isCircular (uint64 num)
 {
     uint64 curnum;
     int numCircularPrimes = 0;
-    for (curnum = 2; curnum < 1000; curnum++) {
-        if (isPrime(curnum) && isCircular(curnum)) {
-            numCircularPrimes++;
+    for (curnum = 2; curnum < 1000000; curnum++) {
+        if (isPrime(curnum)) {
+            if (isCircular(curnum)) {
+                numCircularPrimes++;
+            }
         }
     } 
-    printf("\n");
     return [NSString stringWithFormat:@"%d", numCircularPrimes];
 }
 
-- (NSString *) realAnswer { return nil; }
+- (NSString *) realAnswer { return @"55"; }
 @end
