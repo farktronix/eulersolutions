@@ -2,22 +2,40 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdint.h>
-#include <pthread.h>
-#include <fcntl.h>
-#include <sys/errno.h>
-#include <unistd.h>
 
 #define GRID_SIZE 30
+#define gp(g, i, j) (*(g + (i * GRID_SIZE) + j))
+
 static double sProb[GRID_SIZE][GRID_SIZE];
 
-void printGrid (double grid[GRID_SIZE][GRID_SIZE])
+static char sCurChar = '|';
+static char nextChar (void)
+{
+    switch (sCurChar) {
+        case '|':
+            sCurChar = '/';
+            break;
+        case '/':
+            sCurChar = '-';
+            break;
+        case '-':
+            sCurChar = '\\';
+            break;
+        case '\\':
+            sCurChar = '|';
+            break;
+    }
+    return sCurChar;
+}
+
+void printGrid (double *grid)
 {
     char ii;
     for (ii = 0; ii < GRID_SIZE; ii++) {
         char jj;
         printf("\t[ ");
         for (jj = 0; jj < GRID_SIZE; jj++) {
-            double curFleas = grid[ii][jj];
+            double curFleas = gp(grid, ii, jj);
             printf("%0.4f ", curFleas);
         }
         printf("]\n");
@@ -25,40 +43,71 @@ void printGrid (double grid[GRID_SIZE][GRID_SIZE])
     printf("\n\n\n");
 }
 
-void initGrid (double grid[GRID_SIZE][GRID_SIZE], double num)
+void initGrid (double *grid, double num)
 {
     char ii;
     for (ii = 0; ii < GRID_SIZE; ii++) {
         char jj;
         for (jj = 0; jj < GRID_SIZE; jj++) {
-            grid[ii][jj] = num;
+            gp(grid, ii, jj) = num;
         }
     }
 }
 
-void copyGrid (double dst[GRID_SIZE][GRID_SIZE], double src[GRID_SIZE][GRID_SIZE])
+void copyGrid (double *dst, double *src)
 {
     char ii;
     for (ii = 0; ii < GRID_SIZE; ii++) {
         char jj;
         for (jj = 0; jj < GRID_SIZE; jj++) {
-            dst[ii][jj] = src[ii][jj];
+            gp(dst, ii, jj) = gp(src, ii, jj);
         }
     }
 }
 
-double unoccupiedSquares (double grid[GRID_SIZE][GRID_SIZE])
+void combineProbs (double *prob, double *grids[GRID_SIZE * GRID_SIZE]) 
 {
-    double total = 0.0;
-    char ii;
+    int ii;
+    int jj;
+    int mm;
+    double sum = 0.0;
+    printf("Combining probabilities... -");
+    fflush(stdout);
     for (ii = 0; ii < GRID_SIZE; ii++) {
-        char jj;
         for (jj = 0; jj < GRID_SIZE; jj++) {
-            total += grid[ii][jj];
+            for (mm = 0; mm < GRID_SIZE * GRID_SIZE; mm++) {
+                gp(prob, ii, jj) *= (1 - gp(grids[mm], ii, jj));
+            }
+            sum += gp(prob, ii, jj);
         }
+        printf("\b%c", nextChar());
+        fflush(stdout);
     }
+    printf("\nSum is %0.08f\n", sum);
+}
 
-    return total;
+double fleaProb (double *grid, int ii, int jj) {
+    if (ii < 0 || jj < 0 || ii >= GRID_SIZE || jj >= GRID_SIZE) return 0;
+    return gp(grid, ii, jj) * sProb[ii][jj];
+}
+
+void makeGridMap (double *grid)
+{
+    int iter;
+    double *newGrid = malloc(GRID_SIZE * GRID_SIZE * sizeof(double));
+    for (iter = 0; iter < 50; iter++) {
+        initGrid(newGrid, 0.0);
+        int ii;
+        int jj;
+        for (ii = 0; ii < GRID_SIZE; ii++) {
+            for (jj = 0; jj < GRID_SIZE; jj++) {
+                gp(newGrid, ii, jj) = fleaProb(grid, ii - 1, jj) + fleaProb(grid, ii, jj - 1) + fleaProb(grid, ii + 1, jj) + fleaProb(grid, ii, jj + 1); 
+            }
+        }
+        copyGrid(grid, newGrid);
+        //printGrid(grid);
+    }
+    free(newGrid);
 }
 
 void initSquareProb (double prob[GRID_SIZE][GRID_SIZE])
@@ -94,46 +143,33 @@ void initSquareProb (double prob[GRID_SIZE][GRID_SIZE])
     }   
 }
 
-double expectedFleas (double grid[GRID_SIZE][GRID_SIZE], int ii, int jj) {
-    if (ii < 0 || jj < 0 || ii >= GRID_SIZE || jj >= GRID_SIZE) return 0;
-    return grid[ii][jj] * sProb[ii][jj];
-}
-
-double emptyProb (double grid[GRID_SIZE][GRID_SIZE], int ii, int jj) {
-    if (ii < 0 || jj < 0 || ii >= GRID_SIZE || jj >= GRID_SIZE) return 0;
-    return grid[ii][jj] * (1.0 / sProb[ii][jj]);
-}
-
-void ringBell (double grid[GRID_SIZE][GRID_SIZE])
-{
-    int jj;
-    int ii;
-    double nextGrid[GRID_SIZE][GRID_SIZE];
-    initGrid(nextGrid, 0.0);
-
-    for (ii = 0; ii < GRID_SIZE; ii++) {
-        for (jj = 0; jj < GRID_SIZE; jj++) {
-            nextGrid[ii][jj] = gridProb(grid, ii - 1, jj) * gridProb(grid, ii, jj - 1) * gridProb(grid, ii + 1, jj) * gridProb(grid, ii, jj + 1);
-        }
-    }
-
-    copyGrid(grid, nextGrid);
-}
-
 int main (int argc, char *argv[]) 
 {
-    double grid[GRID_SIZE][GRID_SIZE];
-    initGrid(grid, 1.0);
+    double *grids[GRID_SIZE * GRID_SIZE];
     initSquareProb(sProb);
 
-    int iteration = 0;
-    while (iteration < 50) {
-        printGrid(grid);
-        ringBell(grid);         
-        iteration++;
+    printf("Initializing probability maps... -");
+    fflush(stdout);
+    int ii = 0;
+    int jj = 0;
+    for (ii = 0; ii < GRID_SIZE; ii++) {
+        for (jj = 0; jj < GRID_SIZE; jj++) {
+            double *curGrid = malloc(GRID_SIZE * GRID_SIZE * sizeof(double));
+            gp(grids, ii, jj) = curGrid;
+            initGrid(curGrid, 0.0);
+            gp(curGrid, ii, jj) = 1.0;
+            makeGridMap(curGrid);
+            fflush(stdout);
+        }
+        printf("\b%c", nextChar());
     }
+    printf("\n");
 
-    printf("Number of unoccupied squares: %0.07f \n", unoccupiedSquares(grid));
+    printf("Grids initialized. Calculating probability...\n");
+
+    double *prob = malloc(GRID_SIZE * GRID_SIZE * sizeof(double));
+    initGrid(prob, 1.0);
+    combineProbs(prob, grids);
 
     return 0;
 }
