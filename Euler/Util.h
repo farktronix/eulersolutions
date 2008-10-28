@@ -10,3 +10,4 @@
 #include <openssl/bn.h>
 
 BOOL isPrime (uint64 n);
+int nthDigit (uint number, int digit);

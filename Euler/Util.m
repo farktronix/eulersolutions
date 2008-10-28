@@ -20,3 +20,11 @@ BOOL isPrime (uint64 n)
     }
     return YES;
 }
+
+// zero indexed. in the number 1234, 4 is the 0th digit, 3 is the 1st digit, etc...
+int nthDigit (uint number, int digit)
+{
+    int above = pow(10, digit+1);
+    int below = pow(10, digit);
+    return ((number % above)/below);
+}
