@@ -16,15 +16,25 @@
 @implementation Problem40
 - (int) getDigit:(int)x
 {
-    int digits = 1;
-    
+    int base = 0;
+    int p = 0;
+    while (base < x) {
+        int t = (pow(10, p + 1) - base - 1) * (p + 1);
+        if (t > x) break;
+        p++;
+        base = t;
+    }
+    int off = x - base;
+    int num = off / (int)pow(10, p);
+    int digit = off % (int)pow(10, p);
+    return nthDigit(num, digit);
 }
 
 - (NSString *) runSolution 
 {
     int ii;
-    for (ii = 1; ii < 150; ii++) {
-        NSLog(@"Digit %d is %d", ii, [self getDigit:ii]);
+    for (ii = 1; ii < 50; ii++) {
+        NSLog(@"%d: %d", ii, [self getDigit:ii]);
     }
     return nil;
 }
