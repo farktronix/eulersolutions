@@ -231,8 +231,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -278,12 +276,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>35</integer>
-									<integer>34</integer>
+									<integer>17</integer>
+									<integer>1</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 331}, {186, 400}}</string>
+							<string>{{0, 232}, {186, 400}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -347,6 +346,8 @@
 							<string>0pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -519,13 +520,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>4320B8C60EB845C400FC2B88</string>
+		<string>4320B8D60EB847AC00FC2B88</string>
 		<string>4320B8750EB838DA00FC2B88</string>
 		<string>4320B8760EB838DA00FC2B88</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>4335336A0D3604CE001F23F8</string>
-		<string>/Volumes/Data/code/personalcode/eulersolutions/Euler/Euler.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>/Volumes/Data/code/personalcode/eulersolutions/Euler/Euler.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>50 419 736 459 0 0 1920 1178 </string>
