@@ -70,3 +70,26 @@ BOOL isHexagonalNumber(uint64_t n)
     }
     return [sHexagonalNumbers containsObject:[NSNumber numberWithLongLong:n]];
 }
+
+static NSMutableDictionary *sFacts = nil;
+uint64_t fact(uint64_t n)
+{
+    if (n <= 0) return 1;
+    
+    if (sFacts == nil) {
+        sFacts = [[NSMutableDictionary alloc] initWithObjectsAndKeys:[NSNumber numberWithLongLong:1], [NSNumber numberWithLongLong:1], nil];
+    }
+    NSNumber *num = [NSNumber numberWithLongLong:n];
+    NSNumber *cached = [sFacts objectForKey:num];
+    if (cached) {
+        return [cached longLongValue];
+    }
+    uint64_t retval = n * fact(n - 1);
+    [sFacts setObject:[NSNumber numberWithLongLong:retval] forKey:num];
+    return retval;
+}
+
+uint64_t choose(uint64_t n, uint64_t m)
+{
+    return fact(n)/(fact(m) * fact(n - m));
+}

@@ -15,3 +15,6 @@ int nthDigit (uint number, int digit);
 BOOL isTriangleNumber(uint64_t n);
 BOOL isPentagonalNumber(uint64_t n);
 BOOL isHexagonalNumber(uint64_t n);
+
+uint64_t fact(uint64_t n);
+uint64_t choose(uint64_t n, uint64_t m);
