@@ -19,6 +19,7 @@
 		433535750D361D47001F23F8 /* Problem19.m in Sources */ = {isa = PBXBuildFile; fileRef = 433535740D361D47001F23F8 /* Problem19.m */; };
 		433535C30D36230A001F23F8 /* Problem18.m in Sources */ = {isa = PBXBuildFile; fileRef = 433535C20D36230A001F23F8 /* Problem18.m */; };
 		4341D1DA0D36B22700E58B07 /* Problem67.m in Sources */ = {isa = PBXBuildFile; fileRef = 4341D1D90D36B22700E58B07 /* Problem67.m */; };
+		438E2F1A0EBAF86A00265194 /* Problem45.m in Sources */ = {isa = PBXBuildFile; fileRef = 438E2F190EBAF86A00265194 /* Problem45.m */; };
 		4390DDAD0E8C77D3001E58D2 /* Problem23.m in Sources */ = {isa = PBXBuildFile; fileRef = 4390DDAC0E8C77D3001E58D2 /* Problem23.m */; };
 		43944AF80EB0F21E0093D00E /* Problem213.m in Sources */ = {isa = PBXBuildFile; fileRef = 43944AF70EB0F21E0093D00E /* Problem213.m */; };
 		43BE8A200EB644F300CDD0CC /* Problem40.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BE8A1F0EB644F300CDD0CC /* Problem40.m */; };
@@ -64,6 +65,7 @@
 		433535C40D36232F001F23F8 /* Problem18.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Problem18.h; sourceTree = "<group>"; };
 		4341D1D80D36B22700E58B07 /* Problem67.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Problem67.h; sourceTree = "<group>"; };
 		4341D1D90D36B22700E58B07 /* Problem67.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem67.m; sourceTree = "<group>"; };
+		438E2F190EBAF86A00265194 /* Problem45.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem45.m; sourceTree = "<group>"; };
 		4390DDAC0E8C77D3001E58D2 /* Problem23.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem23.m; sourceTree = "<group>"; };
 		43944AF70EB0F21E0093D00E /* Problem213.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem213.m; sourceTree = "<group>"; };
 		43BE8A1F0EB644F300CDD0CC /* Problem40.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem40.m; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				43BE8A1F0EB644F300CDD0CC /* Problem40.m */,
 				4320B8820EB83C4D00FC2B88 /* Problem42.h */,
 				4320B8830EB83C4D00FC2B88 /* Problem42.m */,
+				438E2F190EBAF86A00265194 /* Problem45.m */,
 				4320B8AC0EB8415200FC2B88 /* Problem52.m */,
 				4341D1D80D36B22700E58B07 /* Problem67.h */,
 				4341D1D90D36B22700E58B07 /* Problem67.m */,
@@ -211,6 +214,7 @@
 				4320B8840EB83C4D00FC2B88 /* Problem42.m in Sources */,
 				4320B8AD0EB8415200FC2B88 /* Problem52.m in Sources */,
 				4320B8D30EB8473100FC2B88 /* Problem32.m in Sources */,
+				438E2F1A0EBAF86A00265194 /* Problem45.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +228,6 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Euler_Prefix.pch;
 				INSTALL_PATH = /usr/local/bin;

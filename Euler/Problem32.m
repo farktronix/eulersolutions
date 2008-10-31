@@ -16,7 +16,7 @@
 @implementation Problem32
 - (NSString *) runSolution
 {
-
+    return nil;
 }
 
 - (NSString *) realAnswer { return nil; }

@@ -11,3 +11,7 @@
 
 BOOL isPrime (uint64 n);
 int nthDigit (uint number, int digit);
+
+BOOL isTriangleNumber(uint64_t n);
+BOOL isPentagonalNumber(uint64_t n);
+BOOL isHexagonalNumber(uint64_t n);
