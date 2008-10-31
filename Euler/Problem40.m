@@ -16,28 +16,32 @@
 @implementation Problem40
 - (int) getDigit:(int)x
 {
-    int base = 0;
-    int p = 0;
-    while (base < x) {
-        int t = (pow(10, p + 1) - base - 1) * (p + 1);
-        if (t > x) break;
+    if (x < 10) return x;
+    int p = 1;
+    int numNums = 1;
+    while (numNums < x) {
+        int step = (pow(10, p) - pow(10, p - 1)) * p;
+        if (numNums + step > x) break;
+        numNums += step;
         p++;
-        base = t;
     }
-    int off = x - base;
-    int num = off / (int)pow(10, p);
-    int digit = off % (int)pow(10, p);
-    return nthDigit(num, digit);
+    int diff = x - numNums;
+    int incNum = (diff / p) + pow(10, p - 1);
+    int digit = diff % p;
+    return nthDigit(incNum, p - 1 - digit);
 }
 
 - (NSString *) runSolution 
 {
+    int product = 1;
     int ii;
-    for (ii = 1; ii < 50; ii++) {
-        NSLog(@"%d: %d", ii, [self getDigit:ii]);
+    for (ii = 1; ii < 1000001; ii *= 10) {
+        int value = [self getDigit:ii];
+        product *= value;
+        NSLog(@"(%d) Value: %d, Product: %d", ii, value, product);
     }
-    return nil;
+    return [NSString stringWithFormat:@"%d", product];
 }
 
-- (NSString *) realAnswer { return nil; }
+- (NSString *) realAnswer { return @"210"; }
 @end
