@@ -21,25 +21,39 @@ BOOL isAbundant (uint x)
     uint sum = 1;
     uint i;
     for (i = 2; i < x; i++) {
-        if (x % i == 0) sum += i;
+        if (x % i == 0) {
+            sum += i;
+        }
     }
     return sum > x;
 }
 
 - (NSString *) runSolution
 {
-    NSMutableArray *abundantNumbers = [[NSMutableArray alloc] init];
+    uint abundants[28124] = {0};
+    uint goodNums[28124] = {0};
+    uint abtPtr = 0;
     int sum = 0;
-    int i;
+    int i, j;
     for (i = 1; i < 28124; i++) {
+        goodNums[i] = i;
         if (isAbundant(i)) {
-            sum += i;
+            abundants[abtPtr++] = i;
         }
     }
-    [abundantNumbers release];
+    
+    for (i = 0; i < abtPtr; i++) {
+        for (j = i; j < abtPtr; j++) {
+            int curSum = abundants[i] + abundants[j];
+            if (curSum < 28124) goodNums[curSum] = 0;
+        }
+    }
+    
+    for (i = 0; i < 28124; i++) sum += goodNums[i];
+    
     return [NSString stringWithFormat:@"%d", sum];
 }
 
-- (NSString *) realAnswer { return nil; }
+- (NSString *) realAnswer { return @"4179871"; }
 
 @end

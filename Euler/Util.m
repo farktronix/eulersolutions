@@ -12,7 +12,7 @@
 
 BOOL isPrime (uint64 n)
 {
-//    if (n == 1) return NO;
+    if (n == 1 || n == 0) return NO;
     uint64 i = 1;
     uint64 limit = (uint64)sqrtf((long double)n) + 1;
     while (++i < limit) {
@@ -72,24 +72,24 @@ BOOL isHexagonalNumber(uint64_t n)
 }
 
 static NSMutableDictionary *sFacts = nil;
-uint64_t fact(uint64_t n)
+uint64_t fact(int n)
 {
     if (n <= 0) return 1;
     
     if (sFacts == nil) {
-        sFacts = [[NSMutableDictionary alloc] initWithObjectsAndKeys:[NSNumber numberWithLongLong:1], [NSNumber numberWithLongLong:1], nil];
+        sFacts = [[NSMutableDictionary alloc] initWithObjectsAndKeys:[NSNumber numberWithLongLong:1], [NSNumber numberWithInt:1], nil];
     }
-    NSNumber *num = [NSNumber numberWithLongLong:n];
+    NSNumber *num = [NSNumber numberWithInt:n];
     NSNumber *cached = [sFacts objectForKey:num];
     if (cached) {
         return [cached longLongValue];
     }
-    uint64_t retval = n * fact(n - 1);
+    uint64_t retval = (uint64_t)n * fact(n - 1);
     [sFacts setObject:[NSNumber numberWithLongLong:retval] forKey:num];
     return retval;
 }
 
-uint64_t choose(uint64_t n, uint64_t m)
+uint64_t choose(int n, int r)
 {
-    return fact(n)/(fact(m) * fact(n - m));
+    return fact(n)/(uint64_t)(fact(r) * fact(n - r));
 }

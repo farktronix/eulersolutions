@@ -16,5 +16,5 @@ BOOL isTriangleNumber(uint64_t n);
 BOOL isPentagonalNumber(uint64_t n);
 BOOL isHexagonalNumber(uint64_t n);
 
-uint64_t fact(uint64_t n);
-uint64_t choose(uint64_t n, uint64_t m);
+uint64_t fact(int n);
+uint64_t choose(int n, int m);

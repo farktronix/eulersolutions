@@ -11,11 +11,11 @@ def factors (x)
     while y > 1
         y = y - 1
         next if facts[y] != nil
-        #print "Checking " + y.to_s + "(" + x.to_s + ")\n"
+#        #print "Checking " + y.to_s + "(" + x.to_s + ")\n"
         if (x % y) == 0 
             facts[y] = 1
             facts[x/y] = 1
-            facts = facts.merge(factors(y))
+#            facts = facts.merge(factors(y))
         end
     end
     @@allfacts[x] = facts
@@ -30,18 +30,13 @@ def isAbundant (x)
     sum > x
 end
 
-#puts factors(16).keys.sort.join(", ")
-#puts factors(24).keys.sort.join(", ")
 sum = 0
-for i in (1...14061)
-    if isAbundant(i) == false
-        sum = sum + i
-    end
-    if i % 1000 == 0
-        printf "%d\n", sum
-        $stdout.flush
+abundants = {}
+for i in (1...10000)
+    if isAbundant(i)
+        abundants[i] = 1
     end
 end
 
 printf "\n"
-puts sum
+puts abundants.size
