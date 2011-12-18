@@ -99,28 +99,45 @@ int main (int argc, char * argv[]) {
     
     NSArray *problemClasses = getProblemClasses();
     
-    uint64 totalTime = 0;
-    int attemptedProblems = 0;
-    int correctProblems = 0;
+    NSLock *counterLock = [[NSLock alloc] init];
+    __block uint64 totalTime = 0;
+    __block int attemptedProblems = 0;
+    __block int correctProblems = 0;
+    
+    dispatch_queue_t problemQueue = dispatch_queue_create("com.farktronix.euler.problemQueue", DISPATCH_QUEUE_CONCURRENT);
+    
     for (PEProblem *problem in problemClasses) {
         if (pnum != -1 && [problem _problemNumber] != pnum) continue;
         problem.showResult = showResult;
         problem.showTiming = showTiming;
         problem.verbose = verbose;
-        NSString *solution = [problem solveProblem];
-        attemptedProblems++;
-        totalTime += problem.solveTime;
-        if ([solution isEqualToString:problem.realAnswer]) {
-            correctProblems++;
-        }
+        
+        dispatch_async(problemQueue, ^{
+            NSString *solution = [problem solveProblem];
+            [counterLock lock];
+            attemptedProblems++;
+            totalTime += problem.solveTime;
+            if ([solution isEqualToString:problem.realAnswer]) {
+                correctProblems++;
+            }
+            [counterLock unlock];
+        });
     }
     
-    printf("\n==========\n");
-    printf("Solved %d out of %d problems\n", correctProblems, attemptedProblems);
-    if (showTiming) {
-        printf("Total Time: %0.4fms\n", (totalTime * sTimebaseInfo.numer / sTimebaseInfo.denom) / 1000000.0);
-    }
-    printf("==========\n");
+    dispatch_barrier_async(problemQueue, ^{
+        printf("\n==========\n");
+        printf("Solved %d out of %d problems\n", correctProblems, attemptedProblems);
+        if (showTiming) {
+            printf("Total Time: %0.4fms\n", (totalTime * sTimebaseInfo.numer / sTimebaseInfo.denom) / 1000000.0);
+        }
+        printf("==========\n");
+        
+        exit(0);
+    });
+    
+    dispatch_main();
+    
+    [counterLock release];
     
     [pool drain];
     return 0;

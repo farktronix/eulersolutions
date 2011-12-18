@@ -15,13 +15,13 @@
 @implementation Problem53
 - (NSString *) runSolution 
 {
-    int n,m;
+//    int n,m;
     int sum = 0;
-    for (n = 1; n < 101; n++) {
-        for (m = 1; m <= n; m++) {
-            if (choose(n, m)) sum++;
-        }
-    }
+//    for (n = 1; n < 101; n++) {
+//        for (m = 1; m <= n; m++) {
+//            if (choose(n, m)) sum++;
+//        }
+//    }
     return [NSString stringWithFormat:@"%d", sum];
 }
 

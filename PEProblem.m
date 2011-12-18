@@ -35,19 +35,21 @@
         (void) mach_timebase_info(&sTimebaseInfo);
     }
     
-    printf("Solving Problem #%03d ... ", [self _problemNumber]);
     uint64_t starttime = mach_absolute_time();
     NSString *solution = [self runSolution];
     uint64_t endtime = mach_absolute_time();
     _solveTime = endtime - starttime;
-    printf("%s", [solution isEqualToString:[self realAnswer]] ? "Correct" : "Wrong");
     
-    if (self.showResult) printf(": %30s", [solution UTF8String]);
-    if (self.showTiming) {
-        printf("\t(%0.4fms)", (_solveTime * sTimebaseInfo.numer / sTimebaseInfo.denom) / 1000000.0);
-    }
-    
-    printf("\n");
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        printf("Problem #%03d %s", [self _problemNumber], [solution isEqualToString:[self realAnswer]] ? "succeeded" : "failed");
+        
+        if (self.showResult) printf(": %s", [solution UTF8String]);
+        if (self.showTiming) {
+            printf(" in %0.4fms", (_solveTime * sTimebaseInfo.numer / sTimebaseInfo.denom) / 1000000.0);
+        }
+        
+        printf("\n");
+    });
     
     return solution;
 }

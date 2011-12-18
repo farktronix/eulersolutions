@@ -11,6 +11,7 @@
 		4320B8840EB83C4D00FC2B88 /* Problem42.m in Sources */ = {isa = PBXBuildFile; fileRef = 4320B8830EB83C4D00FC2B88 /* Problem42.m */; };
 		4320B8AD0EB8415200FC2B88 /* Problem52.m in Sources */ = {isa = PBXBuildFile; fileRef = 4320B8AC0EB8415200FC2B88 /* Problem52.m */; };
 		4320B8D30EB8473100FC2B88 /* Problem32.m in Sources */ = {isa = PBXBuildFile; fileRef = 4320B8D20EB8473100FC2B88 /* Problem32.m */; };
+		432315A3149D9F5700F43E21 /* libgmp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 432315A2149D9F5700F43E21 /* libgmp.dylib */; };
 		433533890D360732001F23F8 /* PEProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = 433533880D360732001F23F8 /* PEProblem.m */; };
 		4335338E0D3607A4001F23F8 /* Problem1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4335338D0D3607A4001F23F8 /* Problem1.m */; };
 		4335346B0D36133C001F23F8 /* Problem2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4335346A0D36133C001F23F8 /* Problem2.m */; };
@@ -57,6 +58,7 @@
 		4320B8830EB83C4D00FC2B88 /* Problem42.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem42.m; sourceTree = "<group>"; };
 		4320B8AC0EB8415200FC2B88 /* Problem52.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem52.m; sourceTree = "<group>"; };
 		4320B8D20EB8473100FC2B88 /* Problem32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem32.m; sourceTree = "<group>"; };
+		432315A2149D9F5700F43E21 /* libgmp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgmp.dylib; path = /usr/local/lib/libgmp.dylib; sourceTree = "<absolute>"; };
 		433533870D360732001F23F8 /* PEProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PEProblem.h; sourceTree = "<group>"; };
 		433533880D360732001F23F8 /* PEProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PEProblem.m; sourceTree = "<group>"; };
 		4335338D0D3607A4001F23F8 /* Problem1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem1.m; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				432315A3149D9F5700F43E21 /* libgmp.dylib in Frameworks */,
 				8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +155,7 @@
 		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				432315A2149D9F5700F43E21 /* libgmp.dylib */,
 				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
 			);
 			name = "External Frameworks and Libraries";
@@ -246,6 +250,8 @@
 		1DEB927508733DD40010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -256,6 +262,7 @@
 				INSTALL_PATH = /usr/local/bin;
 				OTHER_LDFLAGS = "-lssl";
 				PRODUCT_NAME = Euler;
+				VALID_ARCHS = x86_64;
 				ZERO_LINK = YES;
 			};
 			name = Debug;
@@ -263,6 +270,8 @@
 		1DEB927608733DD40010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -270,12 +279,15 @@
 				INSTALL_PATH = /usr/local/bin;
 				OTHER_LDFLAGS = "-lssl";
 				PRODUCT_NAME = Euler;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
 		1DEB927908733DD40010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
@@ -285,6 +297,8 @@
 		1DEB927A08733DD40010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
