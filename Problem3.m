@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <gmp.h>
 #import "PEProblem.h"
+#import "FUNumber.h"
 #import "Util.h"
 
 /*
@@ -24,33 +25,19 @@ What is the largest prime factor of the number 317584931803?
 @implementation Problem3
 - (NSString *) runSolution
 {
-    mpz_t bignum;
-    mpz_init_set_str(bignum, "317584931803", 10);
-    mpz_t numLimit;
-    mpz_sqrt(numLimit, bignum);
-    mpz_t i;
-    mpz_init_set_si(i, 2);
-    mpz_t largest;
+    FUNumber *num = [FUNumber numberWithString:@"317584931803"];
+    FUNumber *numLimit = [num sqrt];
+    FUNumber *i = [FUNumber numberWithInt:2];
+    FUNumber *largest = nil;
     
-    while (mpz_cmp(i, numLimit) > 0) {
-        if (mpz_probab_prime_p(i, 1) > 0) {
-            mpz_t modResult;
-            mpz_mod(modResult, bignum, i);
-            if (mpz_cmp_si(modResult, 0)) {
-                mpz_swap(largest, modResult);
-            }
-            
-            mpz_clear(modResult);
+    while ([i compare:numLimit] == NSOrderedAscending) {
+        if ([[num mod:i] intValue] == 0) {
+            [largest release];
+            largest = [i copy];
         }
+        i = [i nextPrime];
     }
-    
-    mpz_clear(bignum);
-    mpz_clear(numLimit);
-    mpz_clear(i);
-    char *retstr = mpz_get_str(NULL, 10, largest);
-    NSString *retNSStr = [NSString stringWithUTF8String:retstr];
-    free(retstr);
-    return retNSStr;
+    return [largest description];
 }
 - (NSString *) realAnswer { return @"3919"; }
 @end

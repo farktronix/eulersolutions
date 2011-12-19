@@ -12,6 +12,12 @@
 		4320B8AD0EB8415200FC2B88 /* Problem52.m in Sources */ = {isa = PBXBuildFile; fileRef = 4320B8AC0EB8415200FC2B88 /* Problem52.m */; };
 		4320B8D30EB8473100FC2B88 /* Problem32.m in Sources */ = {isa = PBXBuildFile; fileRef = 4320B8D20EB8473100FC2B88 /* Problem32.m */; };
 		432315A3149D9F5700F43E21 /* libgmp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 432315A2149D9F5700F43E21 /* libgmp.dylib */; };
+		432315A7149EA28500F43E21 /* FUNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315A6149EA28500F43E21 /* FUNumber.m */; };
+		432315C0149FCE0B00F43E21 /* FUNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315BF149FCE0B00F43E21 /* FUNumberTests.m */; };
+		432315C5149FCF9800F43E21 /* FUNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315A6149EA28500F43E21 /* FUNumber.m */; };
+		432315C6149FCFC400F43E21 /* libgmp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 432315A2149D9F5700F43E21 /* libgmp.dylib */; };
+		432315C7149FCFC700F43E21 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432315B0149FCE0A00F43E21 /* SenTestingKit.framework */; };
+		432315C8149FCFFE00F43E21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 		433533890D360732001F23F8 /* PEProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = 433533880D360732001F23F8 /* PEProblem.m */; };
 		4335338E0D3607A4001F23F8 /* Problem1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4335338D0D3607A4001F23F8 /* Problem1.m */; };
 		4335346B0D36133C001F23F8 /* Problem2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4335346A0D36133C001F23F8 /* Problem2.m */; };
@@ -59,6 +65,14 @@
 		4320B8AC0EB8415200FC2B88 /* Problem52.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem52.m; sourceTree = "<group>"; };
 		4320B8D20EB8473100FC2B88 /* Problem32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem32.m; sourceTree = "<group>"; };
 		432315A2149D9F5700F43E21 /* libgmp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgmp.dylib; path = /usr/local/lib/libgmp.dylib; sourceTree = "<absolute>"; };
+		432315A5149EA28500F43E21 /* FUNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUNumber.h; sourceTree = "<group>"; };
+		432315A6149EA28500F43E21 /* FUNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUNumber.m; sourceTree = "<group>"; };
+		432315AE149FCE0A00F43E21 /* EulerUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EulerUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		432315B0149FCE0A00F43E21 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		432315BA149FCE0B00F43E21 /* EulerUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EulerUnitTests-Info.plist"; sourceTree = "<group>"; };
+		432315BE149FCE0B00F43E21 /* FUNumberTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FUNumberTests.h; path = EulerUnitTests/FUNumberTests.h; sourceTree = "<group>"; };
+		432315BF149FCE0B00F43E21 /* FUNumberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FUNumberTests.m; path = EulerUnitTests/FUNumberTests.m; sourceTree = "<group>"; };
+		432315C1149FCE0B00F43E21 /* EulerUnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EulerUnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		433533870D360732001F23F8 /* PEProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PEProblem.h; sourceTree = "<group>"; };
 		433533880D360732001F23F8 /* PEProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PEProblem.m; sourceTree = "<group>"; };
 		4335338D0D3607A4001F23F8 /* Problem1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem1.m; sourceTree = "<group>"; };
@@ -89,6 +103,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		432315AA149FCE0A00F43E21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432315C6149FCFC400F43E21 /* libgmp.dylib in Frameworks */,
+				432315C7149FCFC700F43E21 /* SenTestingKit.framework in Frameworks */,
+				432315C8149FCFFE00F43E21 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DD76F9B0486AA7600D96B5E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -106,6 +130,7 @@
 			children = (
 				08FB7795FE84155DC02AAC07 /* Source */,
 				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				432315B9149FCE0B00F43E21 /* Resources */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 			);
 			name = Euler;
@@ -116,8 +141,6 @@
 			children = (
 				32A70AAB03705E1F00C91783 /* Euler_Prefix.pch */,
 				08FB7796FE84155DC02AAC07 /* Euler.m */,
-				433534FB0D361803001F23F8 /* Util.h */,
-				433534FC0D361803001F23F8 /* Util.m */,
 				433533870D360732001F23F8 /* PEProblem.h */,
 				433533880D360732001F23F8 /* PEProblem.m */,
 				4335338D0D3607A4001F23F8 /* Problem1.m */,
@@ -148,6 +171,8 @@
 				4302790E0EB7A8B2004867B4 /* Problem102.h */,
 				4302790F0EB7A8B2004867B4 /* Problem102.m */,
 				43944AF70EB0F21E0093D00E /* Problem213.m */,
+				432315A8149FCDF100F43E21 /* Unit Tests */,
+				432315A4149EA26B00F43E21 /* Util */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -155,6 +180,7 @@
 		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				432315B0149FCE0A00F43E21 /* SenTestingKit.framework */,
 				432315A2149D9F5700F43E21 /* libgmp.dylib */,
 				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
 			);
@@ -165,13 +191,62 @@
 			isa = PBXGroup;
 			children = (
 				8DD76FA10486AA7600D96B5E /* Euler */,
+				432315AE149FCE0A00F43E21 /* EulerUnitTests.octest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		432315A4149EA26B00F43E21 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				433534FB0D361803001F23F8 /* Util.h */,
+				433534FC0D361803001F23F8 /* Util.m */,
+				432315A5149EA28500F43E21 /* FUNumber.h */,
+				432315A6149EA28500F43E21 /* FUNumber.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		432315A8149FCDF100F43E21 /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				432315BE149FCE0B00F43E21 /* FUNumberTests.h */,
+				432315BF149FCE0B00F43E21 /* FUNumberTests.m */,
+			);
+			name = "Unit Tests";
+			sourceTree = "<group>";
+		};
+		432315B9149FCE0B00F43E21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				432315BA149FCE0B00F43E21 /* EulerUnitTests-Info.plist */,
+				432315C1149FCE0B00F43E21 /* EulerUnitTests-Prefix.pch */,
+			);
+			name = Resources;
+			path = EulerUnitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		432315AD149FCE0A00F43E21 /* EulerUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 432315C2149FCE0B00F43E21 /* Build configuration list for PBXNativeTarget "EulerUnitTests" */;
+			buildPhases = (
+				432315A9149FCE0A00F43E21 /* Sources */,
+				432315AA149FCE0A00F43E21 /* Frameworks */,
+				432315AB149FCE0A00F43E21 /* Resources */,
+				432315AC149FCE0A00F43E21 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EulerUnitTests;
+			productName = EulerUnitTests;
+			productReference = 432315AE149FCE0A00F43E21 /* EulerUnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		8DD76F960486AA7600D96B5E /* Euler */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "Euler" */;
@@ -207,11 +282,47 @@
 			projectRoot = "";
 			targets = (
 				8DD76F960486AA7600D96B5E /* Euler */,
+				432315AD149FCE0A00F43E21 /* EulerUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		432315AB149FCE0A00F43E21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		432315AC149FCE0A00F43E21 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		432315A9149FCE0A00F43E21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432315C5149FCF9800F43E21 /* FUNumber.m in Sources */,
+				432315C0149FCE0B00F43E21 /* FUNumberTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DD76F990486AA7600D96B5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,6 +352,7 @@
 				43D381B40EBB864B00F1D4CB /* Problem79.m in Sources */,
 				438A45020EBEC34500B16794 /* Problem53.m in Sources */,
 				4357F9080EF8E4A2004D95B5 /* Problem27.m in Sources */,
+				432315A7149EA28500F43E21 /* FUNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +417,58 @@
 			};
 			name = Release;
 		};
+		432315C3149FCE0B00F43E21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EulerUnitTests/EulerUnitTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "EulerUnitTests/EulerUnitTests-Info.plist";
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH_64)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		432315C4149FCE0B00F43E21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EulerUnitTests/EulerUnitTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "EulerUnitTests/EulerUnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -325,6 +489,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		432315C2149FCE0B00F43E21 /* Build configuration list for PBXNativeTarget "EulerUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				432315C3149FCE0B00F43E21 /* Debug */,
+				432315C4149FCE0B00F43E21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

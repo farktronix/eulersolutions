@@ -113,6 +113,7 @@ int main (int argc, char * argv[]) {
         problem.verbose = verbose;
         
         dispatch_async(problemQueue, ^{
+            NSAutoreleasePool *problemPool = [[NSAutoreleasePool alloc] init];
             NSString *solution = [problem solveProblem];
             [counterLock lock];
             attemptedProblems++;
@@ -121,6 +122,7 @@ int main (int argc, char * argv[]) {
                 correctProblems++;
             }
             [counterLock unlock];
+            [problemPool drain];
         });
     }
     
