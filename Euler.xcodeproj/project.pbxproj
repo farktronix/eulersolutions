@@ -18,6 +18,29 @@
 		432315C6149FCFC400F43E21 /* libgmp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 432315A2149D9F5700F43E21 /* libgmp.dylib */; };
 		432315C7149FCFC700F43E21 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432315B0149FCE0A00F43E21 /* SenTestingKit.framework */; };
 		432315C8149FCFFE00F43E21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
+		432315CB149FE9B400F43E21 /* Problem4.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315CA149FE9B300F43E21 /* Problem4.m */; };
+		432315CE149FEAAF00F43E21 /* Problem5.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315CD149FEAAF00F43E21 /* Problem5.m */; };
+		432315D1149FEAE000F43E21 /* Problem6.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315D0149FEAE000F43E21 /* Problem6.m */; };
+		432315D4149FEB6A00F43E21 /* Problem7.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315D3149FEB6A00F43E21 /* Problem7.m */; };
+		432315DD14A0565A00F43E21 /* Problem8.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315DC14A0565A00F43E21 /* Problem8.m */; };
+		432315DF14A056D500F43E21 /* Problem9.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315DE14A056D500F43E21 /* Problem9.m */; };
+		432315E114A0572500F43E21 /* Problem10.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315E014A0572500F43E21 /* Problem10.m */; };
+		432315E314A058A100F43E21 /* Problem11.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315E214A058A100F43E21 /* Problem11.m */; };
+		432315E514A059D000F43E21 /* Problem12.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315E414A059D000F43E21 /* Problem12.m */; };
+		432315E714A059F700F43E21 /* Problem13.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315E614A059F600F43E21 /* Problem13.m */; };
+		432315E914A05B8600F43E21 /* Problem14.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315E814A05B8600F43E21 /* Problem14.m */; };
+		432315EB14A05B9C00F43E21 /* Problem15.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315EA14A05B9C00F43E21 /* Problem15.m */; };
+		432315ED14A05D9600F43E21 /* Problem16.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315EC14A05D9600F43E21 /* Problem16.m */; };
+		432315EF14A05DBC00F43E21 /* Problem17.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315EE14A05DBC00F43E21 /* Problem17.m */; };
+		432315F214A05DF800F43E21 /* Problem20.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315F114A05DF700F43E21 /* Problem20.m */; };
+		432315F414A05E1C00F43E21 /* Problem21.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315F314A05E1C00F43E21 /* Problem21.m */; };
+		432315F614A05E3F00F43E21 /* Problem22.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315F514A05E3F00F43E21 /* Problem22.m */; };
+		432315F914A05E8B00F43E21 /* Problem24.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315F814A05E8A00F43E21 /* Problem24.m */; };
+		432315FB14A05EB500F43E21 /* Problem25.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315FA14A05EB500F43E21 /* Problem25.m */; };
+		432315FD14A05EEF00F43E21 /* Problem26.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315FC14A05EEE00F43E21 /* Problem26.m */; };
+		432315FF14A05F2000F43E21 /* Problem29.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315FE14A05F1F00F43E21 /* Problem29.m */; };
+		4323160114A05F5600F43E21 /* Problem30.m in Sources */ = {isa = PBXBuildFile; fileRef = 4323160014A05F5500F43E21 /* Problem30.m */; };
+		4323160314A05F8B00F43E21 /* Problem31.m in Sources */ = {isa = PBXBuildFile; fileRef = 4323160214A05F8A00F43E21 /* Problem31.m */; };
 		433533890D360732001F23F8 /* PEProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = 433533880D360732001F23F8 /* PEProblem.m */; };
 		4335338E0D3607A4001F23F8 /* Problem1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4335338D0D3607A4001F23F8 /* Problem1.m */; };
 		4335346B0D36133C001F23F8 /* Problem2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4335346A0D36133C001F23F8 /* Problem2.m */; };
@@ -73,6 +96,31 @@
 		432315BE149FCE0B00F43E21 /* FUNumberTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FUNumberTests.h; path = EulerUnitTests/FUNumberTests.h; sourceTree = "<group>"; };
 		432315BF149FCE0B00F43E21 /* FUNumberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FUNumberTests.m; path = EulerUnitTests/FUNumberTests.m; sourceTree = "<group>"; };
 		432315C1149FCE0B00F43E21 /* EulerUnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EulerUnitTests-Prefix.pch"; sourceTree = "<group>"; };
+		432315CA149FE9B300F43E21 /* Problem4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem4.m; sourceTree = "<group>"; };
+		432315CD149FEAAF00F43E21 /* Problem5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem5.m; sourceTree = "<group>"; };
+		432315D0149FEAE000F43E21 /* Problem6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem6.m; sourceTree = "<group>"; };
+		432315D3149FEB6A00F43E21 /* Problem7.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem7.m; sourceTree = "<group>"; };
+		432315DC14A0565A00F43E21 /* Problem8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem8.m; sourceTree = "<group>"; };
+		432315DE14A056D500F43E21 /* Problem9.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem9.m; sourceTree = "<group>"; };
+		432315E014A0572500F43E21 /* Problem10.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem10.m; sourceTree = "<group>"; };
+		432315E214A058A100F43E21 /* Problem11.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem11.m; sourceTree = "<group>"; };
+		432315E414A059D000F43E21 /* Problem12.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem12.m; sourceTree = "<group>"; };
+		432315E614A059F600F43E21 /* Problem13.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem13.m; sourceTree = "<group>"; };
+		432315E814A05B8600F43E21 /* Problem14.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem14.m; sourceTree = "<group>"; };
+		432315EA14A05B9C00F43E21 /* Problem15.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem15.m; sourceTree = "<group>"; };
+		432315EC14A05D9600F43E21 /* Problem16.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem16.m; sourceTree = "<group>"; };
+		432315EE14A05DBC00F43E21 /* Problem17.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem17.m; sourceTree = "<group>"; };
+		432315F014A05DEC00F43E21 /* All Euler Problems.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "All Euler Problems.webarchive"; sourceTree = "<group>"; };
+		432315F114A05DF700F43E21 /* Problem20.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem20.m; sourceTree = "<group>"; };
+		432315F314A05E1C00F43E21 /* Problem21.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem21.m; sourceTree = "<group>"; };
+		432315F514A05E3F00F43E21 /* Problem22.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem22.m; sourceTree = "<group>"; };
+		432315F714A05E7B00F43E21 /* names.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = names.txt; sourceTree = "<group>"; };
+		432315F814A05E8A00F43E21 /* Problem24.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem24.m; sourceTree = "<group>"; };
+		432315FA14A05EB500F43E21 /* Problem25.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem25.m; sourceTree = "<group>"; };
+		432315FC14A05EEE00F43E21 /* Problem26.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem26.m; sourceTree = "<group>"; };
+		432315FE14A05F1F00F43E21 /* Problem29.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem29.m; sourceTree = "<group>"; };
+		4323160014A05F5500F43E21 /* Problem30.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem30.m; sourceTree = "<group>"; };
+		4323160214A05F8A00F43E21 /* Problem31.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem31.m; sourceTree = "<group>"; };
 		433533870D360732001F23F8 /* PEProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PEProblem.h; sourceTree = "<group>"; };
 		433533880D360732001F23F8 /* PEProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PEProblem.m; sourceTree = "<group>"; };
 		4335338D0D3607A4001F23F8 /* Problem1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem1.m; sourceTree = "<group>"; };
@@ -146,12 +194,35 @@
 				4335338D0D3607A4001F23F8 /* Problem1.m */,
 				4335346A0D36133C001F23F8 /* Problem2.m */,
 				433534B60D36153B001F23F8 /* Problem3.m */,
+				432315CA149FE9B300F43E21 /* Problem4.m */,
+				432315CD149FEAAF00F43E21 /* Problem5.m */,
+				432315D0149FEAE000F43E21 /* Problem6.m */,
+				432315D3149FEB6A00F43E21 /* Problem7.m */,
+				432315DC14A0565A00F43E21 /* Problem8.m */,
+				432315DE14A056D500F43E21 /* Problem9.m */,
+				432315E014A0572500F43E21 /* Problem10.m */,
+				432315E214A058A100F43E21 /* Problem11.m */,
+				432315E414A059D000F43E21 /* Problem12.m */,
+				432315E614A059F600F43E21 /* Problem13.m */,
+				432315E814A05B8600F43E21 /* Problem14.m */,
+				432315EA14A05B9C00F43E21 /* Problem15.m */,
+				432315EC14A05D9600F43E21 /* Problem16.m */,
+				432315EE14A05DBC00F43E21 /* Problem17.m */,
 				433535C40D36232F001F23F8 /* Problem18.h */,
 				433535C20D36230A001F23F8 /* Problem18.m */,
 				433535740D361D47001F23F8 /* Problem19.m */,
+				432315F114A05DF700F43E21 /* Problem20.m */,
+				432315F314A05E1C00F43E21 /* Problem21.m */,
+				432315F514A05E3F00F43E21 /* Problem22.m */,
 				4390DDAC0E8C77D3001E58D2 /* Problem23.m */,
+				432315F814A05E8A00F43E21 /* Problem24.m */,
+				432315FA14A05EB500F43E21 /* Problem25.m */,
+				432315FC14A05EEE00F43E21 /* Problem26.m */,
 				4357F9070EF8E4A2004D95B5 /* Problem27.m */,
 				43E978D50D416001000DAEE5 /* Problem28.m */,
+				432315FE14A05F1F00F43E21 /* Problem29.m */,
+				4323160014A05F5500F43E21 /* Problem30.m */,
+				4323160214A05F8A00F43E21 /* Problem31.m */,
 				4320B8D20EB8473100FC2B88 /* Problem32.m */,
 				43D381B20EBB864B00F1D4CB /* Problem79.h */,
 				43D381B30EBB864B00F1D4CB /* Problem79.m */,
@@ -219,8 +290,10 @@
 		432315B9149FCE0B00F43E21 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				432315F714A05E7B00F43E21 /* names.txt */,
 				432315BA149FCE0B00F43E21 /* EulerUnitTests-Info.plist */,
 				432315C1149FCE0B00F43E21 /* EulerUnitTests-Prefix.pch */,
+				432315F014A05DEC00F43E21 /* All Euler Problems.webarchive */,
 			);
 			name = Resources;
 			path = EulerUnitTests;
@@ -353,6 +426,29 @@
 				438A45020EBEC34500B16794 /* Problem53.m in Sources */,
 				4357F9080EF8E4A2004D95B5 /* Problem27.m in Sources */,
 				432315A7149EA28500F43E21 /* FUNumber.m in Sources */,
+				432315CB149FE9B400F43E21 /* Problem4.m in Sources */,
+				432315CE149FEAAF00F43E21 /* Problem5.m in Sources */,
+				432315D1149FEAE000F43E21 /* Problem6.m in Sources */,
+				432315D4149FEB6A00F43E21 /* Problem7.m in Sources */,
+				432315DD14A0565A00F43E21 /* Problem8.m in Sources */,
+				432315DF14A056D500F43E21 /* Problem9.m in Sources */,
+				432315E114A0572500F43E21 /* Problem10.m in Sources */,
+				432315E314A058A100F43E21 /* Problem11.m in Sources */,
+				432315E514A059D000F43E21 /* Problem12.m in Sources */,
+				432315E714A059F700F43E21 /* Problem13.m in Sources */,
+				432315E914A05B8600F43E21 /* Problem14.m in Sources */,
+				432315EB14A05B9C00F43E21 /* Problem15.m in Sources */,
+				432315ED14A05D9600F43E21 /* Problem16.m in Sources */,
+				432315EF14A05DBC00F43E21 /* Problem17.m in Sources */,
+				432315F214A05DF800F43E21 /* Problem20.m in Sources */,
+				432315F414A05E1C00F43E21 /* Problem21.m in Sources */,
+				432315F614A05E3F00F43E21 /* Problem22.m in Sources */,
+				432315F914A05E8B00F43E21 /* Problem24.m in Sources */,
+				432315FB14A05EB500F43E21 /* Problem25.m in Sources */,
+				432315FD14A05EEF00F43E21 /* Problem26.m in Sources */,
+				432315FF14A05F2000F43E21 /* Problem29.m in Sources */,
+				4323160114A05F5600F43E21 /* Problem30.m in Sources */,
+				4323160314A05F8B00F43E21 /* Problem31.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <gmp.h>
 #import "PEProblem.h"
 #import "FUNumber.h"
 #import "Util.h"
@@ -35,7 +34,7 @@ What is the largest prime factor of the number 317584931803?
             [largest release];
             largest = [i copy];
         }
-        i = [i nextPrime];
+        [i nextPrime];
     }
     return [largest description];
 }

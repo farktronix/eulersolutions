@@ -154,11 +154,16 @@
     return mpz_probab_prime_p(_baseNum, 1);
 }
 
-- (FUNumber *) nextPrime
+- (FUNumber *) getNextPrime
 {
     FUNumber *retval = [FUNumber number];
     mpz_nextprime(*[retval _getBaseNum], _baseNum);
     return retval;
+}
+
+- (void) nextPrime
+{
+    mpz_nextprime(_baseNum, _baseNum);
 }
 
 - (FUNumber *) gcd:(FUNumber *)other

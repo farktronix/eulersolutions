@@ -43,7 +43,8 @@
 
 // 0: not prime, 1: probably, 2: definitely
 - (int) isPrime;
-- (FUNumber *) nextPrime;
+- (FUNumber *) getNextPrime;
+- (void) nextPrime;
 - (FUNumber *) gcd:(FUNumber *)other;
 
 // TODO: Not working.

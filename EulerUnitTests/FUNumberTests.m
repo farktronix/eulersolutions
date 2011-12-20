@@ -135,7 +135,7 @@
 {
     FUNumber *testNum = [FUNumber numberWithString:@"4242424242424242424242424242"];
     FUNumber *expected = [FUNumber numberWithString:@"4242424242424242424242424289"];
-    STAssertTrue([[testNum nextPrime] compare:expected] == NSOrderedSame, @"Couldn't find the next prime number");
+    STAssertTrue([[testNum getNextPrime] compare:expected] == NSOrderedSame, @"Couldn't find the next prime number");
 }
 
 - (void) testGCD
