@@ -41,6 +41,8 @@
 		432315FF14A05F2000F43E21 /* Problem29.m in Sources */ = {isa = PBXBuildFile; fileRef = 432315FE14A05F1F00F43E21 /* Problem29.m */; };
 		4323160114A05F5600F43E21 /* Problem30.m in Sources */ = {isa = PBXBuildFile; fileRef = 4323160014A05F5500F43E21 /* Problem30.m */; };
 		4323160314A05F8B00F43E21 /* Problem31.m in Sources */ = {isa = PBXBuildFile; fileRef = 4323160214A05F8A00F43E21 /* Problem31.m */; };
+		4323160714A066F200F43E21 /* UtilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4323160514A066DF00F43E21 /* UtilTests.m */; };
+		4323160814A066F800F43E21 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 433534FC0D361803001F23F8 /* Util.m */; };
 		433533890D360732001F23F8 /* PEProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = 433533880D360732001F23F8 /* PEProblem.m */; };
 		4335338E0D3607A4001F23F8 /* Problem1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4335338D0D3607A4001F23F8 /* Problem1.m */; };
 		4335346B0D36133C001F23F8 /* Problem2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4335346A0D36133C001F23F8 /* Problem2.m */; };
@@ -121,6 +123,8 @@
 		432315FE14A05F1F00F43E21 /* Problem29.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem29.m; sourceTree = "<group>"; };
 		4323160014A05F5500F43E21 /* Problem30.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem30.m; sourceTree = "<group>"; };
 		4323160214A05F8A00F43E21 /* Problem31.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem31.m; sourceTree = "<group>"; };
+		4323160414A066DF00F43E21 /* UtilTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilTests.h; sourceTree = "<group>"; };
+		4323160514A066DF00F43E21 /* UtilTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilTests.m; sourceTree = "<group>"; };
 		433533870D360732001F23F8 /* PEProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PEProblem.h; sourceTree = "<group>"; };
 		433533880D360732001F23F8 /* PEProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PEProblem.m; sourceTree = "<group>"; };
 		4335338D0D3607A4001F23F8 /* Problem1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Problem1.m; sourceTree = "<group>"; };
@@ -283,6 +287,8 @@
 			children = (
 				432315BE149FCE0B00F43E21 /* FUNumberTests.h */,
 				432315BF149FCE0B00F43E21 /* FUNumberTests.m */,
+				4323160414A066DF00F43E21 /* UtilTests.h */,
+				4323160514A066DF00F43E21 /* UtilTests.m */,
 			);
 			name = "Unit Tests";
 			sourceTree = "<group>";
@@ -393,6 +399,8 @@
 			files = (
 				432315C5149FCF9800F43E21 /* FUNumber.m in Sources */,
 				432315C0149FCE0B00F43E21 /* FUNumberTests.m in Sources */,
+				4323160714A066F200F43E21 /* UtilTests.m in Sources */,
+				4323160814A066F800F43E21 /* Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

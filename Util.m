@@ -71,6 +71,34 @@ BOOL isHexagonalNumber(uint64_t n)
     return [sHexagonalNumbers containsObject:[NSNumber numberWithLongLong:n]];
 }
 
+int iLog(uint64_t n)
+{
+    int l = 0;
+    while ((n = (uint64_t)(n/10))) l++;
+    return l;
+}
+
+uint64_t iPow(int x, int n)
+{
+    uint64_t retval = 1;
+    while (n--) retval *= x;
+    return retval;
+}
+
+BOOL isPalindrome(uint64_t n)
+{
+    int digits = iLog(n) + 1;
+    int i;
+    for (i = 0; i < digits/2; i++) {
+        int rightNum = (int)(n%10);
+        uint64_t leftExp = iPow(10, digits-1-(i*2));
+        int leftNum = (int)(n/leftExp);
+        if (leftNum != rightNum) return NO;
+        n = ((n % leftExp)/10);
+    }
+    return YES;
+}
+
 static NSMutableDictionary *sFacts = nil;
 uint64_t fact(int n)
 {

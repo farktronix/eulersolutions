@@ -24,6 +24,9 @@ What is the largest prime factor of the number 317584931803?
 @implementation Problem3
 - (NSString *) runSolution
 {
+    
+    // TODO: This should be working backwards from the square root, not forwards from 2.
+    
     FUNumber *num = [FUNumber numberWithString:@"317584931803"];
     FUNumber *numLimit = [num sqrt];
     FUNumber *i = [FUNumber numberWithInt:2];
