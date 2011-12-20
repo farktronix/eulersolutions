@@ -7,6 +7,7 @@
 //
 
 #import "PEProblem.h"
+#import "FUNumber.h"
 
 /*
  By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
@@ -21,7 +22,13 @@
 @implementation Problem7
 - (NSString *) runSolution
 {
-    return @"";
+    FUNumber *curPrime = [FUNumber numberWithInt:2];
+    int i;
+    for (i = 1; i < 10001; i++) {
+        [curPrime nextPrime];
+    }
+    
+    return [curPrime description];
 }
 
 - (NSString *)realAnswer { return @"104743"; }

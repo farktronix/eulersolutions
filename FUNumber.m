@@ -151,7 +151,7 @@
 
 - (int) isPrime
 {
-    return mpz_probab_prime_p(_baseNum, 1);
+    return mpz_probab_prime_p(_baseNum, 0);
 }
 
 - (FUNumber *) getNextPrime

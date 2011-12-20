@@ -25,7 +25,15 @@
 @implementation Problem9
 - (NSString *) runSolution
 {
-    return @"";
+    int a, b, c;
+    for (c = 1; c < 999; c++) {
+        for (a = 1; a < (1000 - c); a++) {
+            b = 1000 - c - a;
+            if ((a * a) + (b * b) == (c * c)) return [NSString stringWithFormat:@"%d", a * b * c];
+        }
+    }
+    
+    return nil;
 }
 
 - (NSString *)realAnswer { return @"31875000"; }

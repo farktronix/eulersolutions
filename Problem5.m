@@ -21,7 +21,19 @@
 @implementation Problem5
 - (NSString *) runSolution
 {
-    return @"";
+    uint64_t bignum = 1;
+    int i;
+    while (1) {
+        for (i = 20; i >= 0; i--) {
+            if (i == 0) goto done;
+            if (bignum % i != 0) {
+                bignum += i - (bignum % i);
+                break;
+            }
+        }
+    }
+done:
+    return [NSString stringWithFormat:@"%d", bignum];
 }
 
 - (NSString *)realAnswer { return @"232792560"; }

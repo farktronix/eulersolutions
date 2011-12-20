@@ -107,7 +107,8 @@ int main (int argc, char * argv[]) {
     dispatch_queue_t problemQueue = dispatch_queue_create("com.farktronix.euler.problemQueue", DISPATCH_QUEUE_CONCURRENT);
     
     for (PEProblem *problem in problemClasses) {
-        if (pnum != -1 && [problem _problemNumber] != pnum) continue;
+        //if (pnum != -1 && [problem _problemNumber] != pnum) continue;
+        if ([problem _problemNumber] > 10) continue;
         problem.showResult = showResult;
         problem.showTiming = showTiming;
         problem.verbose = verbose;
